@@ -74,7 +74,7 @@ h3 { font-size: 20px; margin: 0 0 6px; }
 .hero { text-align: center; padding: 56px 16px 24px; }
 .wordmark { font-size: clamp(56px, 11vw, 96px); font-weight: 800; line-height: 1; margin: 0; letter-spacing: -.03em; }
 .wordmark .mo { color: var(--ce); } .wordmark .op { color: var(--fm); }
-.subtitle { font-size: clamp(20px, 3vw, 27px); line-height: 1.35; margin: 18px auto 22px; max-width: 820px; font-weight: 600; }
+.subtitle { font-size: clamp(20px, 3vw, 27px); line-height: 1.35; margin: 18px auto 22px; max-width: 820px; font-weight: 600; text-wrap: balance; }
 .authors { font-size: 17px; max-width: 860px; margin: 0 auto; }
 .author { white-space: nowrap; display: inline-block; margin: 0 7px; }
 .author.lead { font-weight: 700; }
