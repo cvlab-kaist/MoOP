@@ -1,0 +1,36 @@
+[project]
+name = "moop"
+version = "0.1.0"
+description = "MoOP: Mixture-of-Objective Pruning for reasoning driving VLAs (Alpamayo 1.5)"
+readme = "README.md"
+requires-python = "==3.12.*"
+license = "Apache-2.0"
+dependencies = [
+  "alpamayo1_5 @ git+https://github.com/NVlabs/alpamayo1.5.git@f42e594aaf8b50dcd2cbb359d62e3ffc7b12fcf8",
+  "torch==2.8.0",
+  "torchvision>=0.23.0",
+  "transformers==4.57.1",
+  "flash-attn>=2.8.3",
+  "physical-ai-av==0.2.0",
+  "huggingface-hub",
+  "numpy==2.2.6",   # mask selection depends on argsort tie order (see moop/masks.py)
+  "pandas>=2.3.3",
+  "pyarrow",
+  "pillow>=12.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["moop"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.uv.extra-build-dependencies]
+flash-attn = [{ requirement = "torch", match-runtime = true }]
+
+[tool.ruff]
+line-length = 110

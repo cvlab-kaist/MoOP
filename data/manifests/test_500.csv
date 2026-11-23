@@ -1,0 +1,501 @@
+clip_id,chunk,country,platform_class,radar_config,month,hour_of_day,time_of_day,season,t0_us
+32c770c4-c5cc-4fad-88f4-8ebbc25d88a1,1264,United States,hyperion_8.1,,12,10,daytime,winter,5100000
+9fde6063-cb79-46d0-93a9-f040eb6183c6,2290,Germany,hyperion_8,low,11,20,nighttime,fall,5100000
+74194ba6-1e14-4829-9715-e9c1165bff51,2275,United States,hyperion_8.1,med,8,16,daytime,summer,5100000
+eb8a145d-4a3e-4988-bdb3-7741334543fa,1378,France,hyperion_8.1,,5,20,nighttime,spring,5100000
+50ee8b73-0805-4ac2-bf04-42dcd244e180,1303,United States,hyperion_8.1,,1,12,daytime,winter,5100000
+a9292f0b-7148-4898-b53a-05740ecdbe58,2310,Italy,hyperion_8,low,9,17,daytime,fall,5100000
+bae3ce7b-5a35-40a3-9ce0-8e8fe76d092b,1331,United States,hyperion_8.1,high,2,19,nighttime,winter,5100000
+68150f61-f519-45e7-9c2f-157851160e2f,2311,Sweden,hyperion_8.1,,7,7,daytime,summer,5100000
+3b9bfbdf-9856-4506-806b-ff1c1e7ce3fc,321,United States,hyperion_8,low,10,22,nighttime,fall,5100000
+b80d9b35-40c7-4272-a132-4d61c201d376,1341,Germany,hyperion_8.1,,3,14,daytime,spring,5100000
+c696fbf5-97fe-4b06-8689-b76a0075e7ec,1328,United States,hyperion_8.1,med,12,14,daytime,winter,5100000
+5527cac5-84d7-48bd-be16-ddff8e93d453,3040,Greece,hyperion_8.1,,8,4,nighttime,summer,5100000
+dd37c4b7-5873-42a1-9dd4-8fe0e1b83575,2247,United States,hyperion_8,low,1,16,daytime,winter,5100000
+10014ab1-bd50-49fc-b0a4-1a870fcbafda,2321,Finland,hyperion_8.1,,11,19,nighttime,fall,5100000
+6d77e934-2031-46a4-9c4e-2d9147467df7,2275,United States,hyperion_8.1,med,4,6,daytime,spring,5100000
+68c81ff9-af98-4eb1-ad7a-2f4122ada208,2659,Germany,hyperion_8.1,,2,12,daytime,winter,5100000
+3bbea239-a5e3-46eb-b90c-fed114f2724d,2211,United States,hyperion_8,low,6,21,nighttime,summer,5100000
+c19eec6b-8ed4-4c8a-a8e2-9ee6c8b59ce3,1408,Portugal,hyperion_8.1,,9,12,daytime,fall,5100000
+633ca9c0-6e90-4607-9713-f8a80953d78a,3015,United States,hyperion_8.1,high,12,18,nighttime,winter,5100000
+d29d9b8f-10f6-4dae-8e6c-fbe15c112791,2314,Spain,hyperion_8,,10,13,daytime,fall,5100000
+e2764cbb-5305-4307-aedc-a6427d009996,2271,United States,hyperion_8.1,med,5,10,daytime,spring,5100000
+6806f8e8-9177-475b-bb0a-b25dbfc2e705,1419,Austria,hyperion_8.1,,1,23,nighttime,winter,5100000
+3766b72a-df8b-43a7-acfe-b5a036c4726f,318,United States,hyperion_8,low,8,10,daytime,summer,5100000
+3c49ab83-2493-4f42-8b56-0feab1f10a88,3021,Germany,hyperion_8.1,,11,18,nighttime,fall,5100000
+54603778-2e3b-4c62-ade3-054385fd4a6c,2642,United States,hyperion_8.1,,12,11,daytime,winter,5100000
+17816f5f-fa23-4f4e-8947-094aaba921dc,2320,Croatia,hyperion_8,low,7,17,daytime,summer,5100000
+2e1aa0b6-167a-4af1-a2d9-f6cd31e9f637,2273,United States,hyperion_8.1,med,3,20,nighttime,spring,5100000
+dc41620f-c797-4f67-bdce-3832c74ce033,3052,Estonia,hyperion_8.1,,2,10,daytime,winter,5100000
+f25c2569-80c6-4d9a-9586-e2cae115fcac,2279,United States,hyperion_8.1,high,9,21,nighttime,fall,5100000
+23ae48f2-7ea8-4cdd-92c4-34bea90efaf1,2291,Germany,hyperion_8,low,1,14,daytime,winter,5100000
+4b5fc72d-d385-4e24-b568-65985d5fcf5d,1302,United States,hyperion_8.1,,11,10,daytime,fall,5100000
+6d9427d1-729e-4123-bc45-e475963d95d9,1463,Lithuania,hyperion_8.1,,8,22,nighttime,summer,5100000
+45535e71-49b1-4014-9ce1-972664a50685,2272,United States,hyperion_8.1,med,4,13,daytime,spring,5100000
+1e8649fb-8446-42e7-8a71-b4373b1faa80,372,Czechia,hyperion_8,low,12,0,nighttime,winter,5100000
+93668923-add7-46c0-826d-8bf40a5d97cd,2166,United States,hyperion_8.1,,10,17,daytime,fall,5100000
+55c4e78f-1dc7-4535-a593-df9523fcf210,2320,Netherlands,hyperion_8.1,,6,6,daytime,summer,5100000
+fd1aeafe-92b8-4f13-8fe8-e1eaca726a25,306,United States,hyperion_8,low,1,20,nighttime,winter,5100000
+77a3bf5b-19f8-4fef-aa2e-06df16593cd1,2656,Germany,hyperion_8.1,,5,10,daytime,spring,5100000
+43188fb6-ffc7-41ec-8ba0-b68386cee2af,2276,United States,hyperion_8.1,med,11,15,daytime,fall,5100000
+68d6299d-4d29-4322-8d98-8fcc0281ca0f,1465,Belgium,hyperion_8.1,,12,20,nighttime,winter,5100000
+58af79c1-b43f-4fc7-95d9-90edcbbe00f0,2324,Denmark,hyperion_8,low,8,11,daytime,summer,5100000
+5b9d2b8b-155f-4f40-b896-fb7f3f02a43a,1272,United States,hyperion_8.1,,2,19,nighttime,winter,5100000
+2ec15861-16f9-4794-b5ca-1a4338e6269e,2280,United States,hyperion_8.1,high,9,8,daytime,fall,5100000
+9bd47999-9119-443f-8d6c-a2aadb6e712e,2666,France,hyperion_8.1,,3,9,daytime,spring,5100000
+30ee2700-50aa-4704-be4f-4fb19087e70d,2289,Germany,hyperion_8,low,1,19,nighttime,winter,5100000
+61a55ffd-75f1-4ac6-b85e-c88e9266f1ff,1292,United States,hyperion_8.1,,7,6,daytime,summer,5100000
+e4a49db9-706a-4e55-ab98-e2445ad39cd5,359,Italy,hyperion_8.1,med,10,19,nighttime,fall,5100000
+77534515-7cbc-4ebc-965a-3252ec7eb05a,3106,United States,hyperion_8,low,12,16,daytime,winter,5100000
+46251d3e-dd87-4bbf-9b4b-20498b6ac71a,1303,United States,hyperion_8.1,,11,7,daytime,fall,5100000
+81bb263f-6cc3-47b8-8009-979df563d54b,3062,Romania,hyperion_8.1,,8,21,nighttime,summer,5100000
+a1d74a60-c3cb-4afe-859f-71573a65ad76,2293,Germany,hyperion_8,low,4,9,daytime,spring,5100000
+6ff9da06-0af0-4caf-8e54-0edca15c3b37,2646,United States,hyperion_8.1,med,2,20,nighttime,winter,5100000
+bbe4d3b2-2289-4e87-9f82-408e9d75f3d6,2696,Poland,hyperion_8.1,,9,9,daytime,fall,5100000
+a4df6a62-70de-4cb9-be84-b767d399943a,1277,United States,hyperion_8.1,,1,12,daytime,winter,5100000
+e5cf770e-317c-482e-a2ba-708d647796d7,2200,United States,hyperion_8,low,5,18,nighttime,spring,5100000
+63d137fe-9865-47e7-97e5-6e4cc7c14140,1450,Slovakia,hyperion_8.1,,7,14,daytime,summer,5100000
+4fff13d0-7fe4-4441-86ec-24514a905aeb,2278,United States,hyperion_8.1,high,12,18,nighttime,winter,5100000
+c7aaa841-53dc-42c2-9802-2e3d4d78e94f,352,Germany,hyperion_8.1,med,11,14,daytime,fall,5100000
+a03b8139-9318-4684-b5a0-1aaafba2e257,2210,United States,hyperion_8,low,8,9,daytime,summer,5100000
+9fb6b23f-9aa1-4a49-9c5d-21d81f7256cf,1393,Sweden,hyperion_8.1,,1,20,nighttime,winter,5100000
+f2d598ce-805c-4315-ac39-0685a77614c2,2630,United States,hyperion_8.1,,10,14,daytime,fall,5100000
+be4eaf7b-76d5-4a25-822a-9dd982cca254,2315,Spain,hyperion_8,low,3,1,nighttime,spring,5100000
+51301ca1-733b-4740-8789-8956ed31f695,3007,United States,hyperion_8.1,,2,13,daytime,winter,5100000
+4fc0c585-2485-4752-bcf4-596616b0073f,2299,Germany,hyperion_8.1,med,9,14,daytime,fall,5100000
+0b3d392a-3154-44ef-9325-6d2903d3915d,1288,United States,hyperion_8.1,,6,1,nighttime,summer,5100000
+5eb50432-2881-4732-b830-827d8e11edcb,2305,France,hyperion_8,low,12,9,daytime,winter,5100000
+bd888f5e-832f-4717-9fcf-e791d2127f01,1293,United States,hyperion_8.1,,5,4,nighttime,spring,5100000
+4f39b87c-fb88-48c5-bf00-5cb2b2c55f80,1404,Greece,hyperion_8.1,,11,13,daytime,fall,5100000
+0d8e5239-da6c-49e9-8848-620791fb6695,2268,United States,hyperion_8,low,1,9,daytime,winter,5100000
+ad896e8b-4fe9-4fbf-9b2f-0672875779fd,2296,Germany,hyperion_8.1,med,8,20,nighttime,summer,5100000
+5e49055e-e25b-4f52-957f-248071402a4e,1331,United States,hyperion_8.1,high,12,17,daytime,winter,5100000
+8685dccc-5564-4f01-9479-c88e6ca08cf2,1388,Italy,hyperion_8.1,,10,22,nighttime,fall,5100000
+59167393-fdc8-4590-8912-958960a0aac4,2251,United States,hyperion_8,low,4,7,daytime,spring,5100000
+f7e540ba-3bac-4986-a0ce-eedaa611fac1,1439,Slovenia,hyperion_8.1,,7,12,daytime,summer,5100000
+3dbbd6e0-9e9d-476b-8988-ecace477a4b8,1306,United States,hyperion_8.1,,2,19,nighttime,winter,5100000
+9bb2e428-eaaf-4efe-b0a7-a548932837e3,370,Portugal,hyperion_8,low,9,13,daytime,fall,5100000
+22fd27aa-b055-4cfa-8730-0ea1bad9f232,2630,United States,hyperion_8.1,,1,20,nighttime,winter,5100000
+758252fb-98aa-4b3e-ab64-7c0acd8f0abc,1366,Germany,hyperion_8.1,med,11,17,daytime,fall,5100000
+64456105-2568-49a8-b30b-cf0c3c01b0e5,1291,United States,hyperion_8.1,,8,13,daytime,summer,5100000
+23878d0d-a719-41b3-8bc4-ee2fbb37525a,367,Austria,hyperion_8,low,5,0,nighttime,spring,5100000
+d6cd7244-4b3f-481e-b56a-396cb5692c95,1281,United States,hyperion_8.1,,12,7,daytime,winter,5100000
+f0199193-b730-4384-bc7a-d3cae8aec705,1438,Finland,hyperion_8.1,high,3,5,nighttime,spring,5100000
+23e32d00-2d6b-4701-b048-5b030e5b3261,2173,United States,hyperion_8.1,,11,10,daytime,fall,5100000
+8364f15b-31c2-4bdc-bcfd-a15f2657bed3,3113,Germany,hyperion_8,low,1,9,daytime,winter,5100000
+4b4505ce-389b-4809-a664-f57ce4bee68d,1427,Croatia,hyperion_8.1,,8,1,nighttime,summer,5100000
+d51604d3-d8e4-43b1-b707-fe8e1926a72e,1320,United States,hyperion_8.1,med,2,7,daytime,winter,5100000
+a81feb52-8f89-48fb-8daf-ac49486fd86c,2250,United States,hyperion_8,low,10,18,nighttime,fall,5100000
+3412c076-0047-4d9b-8fa0-3ba6f1fd0691,2687,Estonia,hyperion_8.1,,12,7,daytime,winter,5100000
+357304d1-565d-4256-8b8e-1776a05212b7,2626,United States,hyperion_8.1,,6,14,daytime,summer,5100000
+ef1f1ce8-f9f5-479f-bb51-901f7731171b,351,Germany,hyperion_8.1,med,9,20,nighttime,fall,5100000
+cbed2a6e-dd59-46cb-b4e9-66fe14013a6e,2190,United States,hyperion_8,low,4,9,daytime,spring,5100000
+c39e428e-773b-4e79-b7e0-d3559c2d6b07,2698,Latvia,hyperion_8.1,,1,9,daytime,winter,5100000
+2c72f30d-83ea-4389-af0b-c16a1fd2dd19,3016,United States,hyperion_8.1,high,11,21,nighttime,fall,5100000
+0c9c31ad-3f19-4ddd-8c7b-7f1ee77fb5db,373,Lithuania,hyperion_8.1,,7,14,daytime,summer,5100000
+22e9f772-8fc6-495a-b378-5fd10987bd49,2246,United States,hyperion_8,low,12,19,nighttime,winter,5100000
+89b3569f-32f8-4644-a57f-efa7f308263f,2665,France,hyperion_8.1,,5,7,daytime,spring,5100000
+93859821-63f5-4fd8-9636-c003ed6a494a,1326,United States,hyperion_8.1,med,2,19,nighttime,winter,5100000
+6e36664b-d3ca-4986-a35d-b0222e4cd181,2296,Germany,hyperion_8,low,9,11,daytime,fall,5100000
+359711c1-0e47-4c5d-9c33-834c008500b3,1285,United States,hyperion_8.1,,8,17,daytime,summer,5100000
+27c6c9f4-7bb5-4fdf-b1db-11322369154b,1430,Netherlands,hyperion_8.1,,1,0,nighttime,winter,5100000
+46f30b87-6c92-41f1-b001-8109d611ec4f,2233,United States,hyperion_8,low,10,8,daytime,fall,5100000
+ca9ffd0f-b206-4b18-adba-304b13bd243c,2310,Sweden,hyperion_8.1,,3,20,nighttime,spring,5100000
+dacd3f7a-4125-418a-b694-0885abfb09da,2274,United States,hyperion_8.1,med,12,12,daytime,winter,5100000
+30b0329f-6fd7-4555-88db-83c68f7e9801,1345,Germany,hyperion_8.1,,8,7,daytime,summer,5100000
+ed8b20c9-1191-42bc-b633-cd486e619ca5,2253,United States,hyperion_8,low,11,19,nighttime,fall,5100000
+dd0c05d1-6145-4a63-8585-12a8f8cd1842,1387,Italy,hyperion_8.1,,2,7,daytime,winter,5100000
+d73df89b-98b2-4da2-ad88-c13e2d74bc8b,3015,United States,hyperion_8.1,high,5,5,nighttime,spring,5100000
+22bd06dc-be54-441c-a77c-d30b9aa1fe88,372,Czechia,hyperion_8.1,,11,16,daytime,fall,5100000
+bc3e01c2-d096-4cf0-81aa-4158d19e2ffe,2253,United States,hyperion_8,low,1,7,daytime,winter,5100000
+9c11af54-87d8-4c44-bf71-85e82c73ccc7,2323,Denmark,hyperion_8.1,,7,23,nighttime,summer,5100000
+154effd4-b1c8-411f-98f6-aca3b8d6c410,2647,United States,hyperion_8.1,med,12,15,daytime,winter,5100000
+5d902eb5-26e0-4e0e-a4a6-61ae2a4b798a,2290,Germany,hyperion_8,low,9,19,nighttime,fall,5100000
+ba5c5c71-e36f-4852-b0c0-7bb410da7fc0,1406,Greece,hyperion_8.1,,8,6,daytime,summer,5100000
+7d1e68e0-8ee0-4b5d-83cd-92fec575342d,2637,United States,hyperion_8.1,,4,17,daytime,spring,5100000
+dfba9cf3-dde2-40c2-95c1-b9e10ad0e856,1323,United States,hyperion_8.1,med,1,18,nighttime,winter,5100000
+03f8f7a1-f698-4af5-a498-a94658a87bd1,2329,Luxembourg,hyperion_8,low,10,9,daytime,fall,5100000
+83119f71-b5a9-4f87-b748-e84596a0da78,1416,Spain,hyperion_8.1,,12,12,daytime,winter,5100000
+0c393e60-54a8-4556-a901-0a0a23f6e201,1298,United States,hyperion_8.1,,6,21,nighttime,summer,5100000
+3a52a483-b1f4-4c05-b9b5-8afacc9187e1,2291,Germany,hyperion_8,low,11,13,daytime,fall,5100000
+5c28b10f-ef27-46e9-9acc-2daca2cfe3aa,1315,United States,hyperion_8.1,,3,3,nighttime,spring,5100000
+dc1fc392-18bf-4b7a-aa16-0a2864127467,1330,United States,hyperion_8.1,high,2,9,daytime,winter,5100000
+4f78fded-0eb9-4a02-b9e0-f332efa9f75b,1477,Hungary,hyperion_8.1,,8,11,daytime,summer,5100000
+35c60bc8-e4d1-47db-9142-fb3b0539fc23,2327,Belgium,hyperion_8,low,9,0,nighttime,fall,5100000
+03e47503-6b5d-47dd-8067-681ac1a4bc4b,1322,United States,hyperion_8.1,med,1,8,daytime,winter,5100000
+88632007-ad65-4bd9-ac65-867792446af7,349,Germany,hyperion_8.1,,5,3,nighttime,spring,5100000
+eadc1879-2ad9-4d8d-9131-4ea4de421f1f,2198,United States,hyperion_8,low,12,17,daytime,winter,5100000
+6a72831b-bb4f-42a6-b771-d0b94c6fce90,2302,France,hyperion_8.1,,10,9,daytime,fall,5100000
+b638c2e2-12c2-4219-8a4d-3c1584db7aff,2272,United States,hyperion_8.1,med,7,23,nighttime,summer,5100000
+1c200140-f1da-4fc9-9ac6-f1ce4f980dd9,1307,United States,hyperion_8.1,,11,15,daytime,fall,5100000
+f74c562e-0944-464e-8809-00a10dd06d4a,2314,Portugal,hyperion_8,low,4,19,nighttime,spring,5100000
+b931c00b-d013-4a17-b9f4-ffd81f71b709,2168,United States,hyperion_8.1,,2,7,daytime,winter,5100000
+15b0f79e-9f61-4548-9996-b030adc77f53,2300,Germany,hyperion_8.1,high,8,15,daytime,summer,5100000
+c62cf4df-dd3e-485c-b0e6-8cb77eba275a,2641,United States,hyperion_8.1,,12,23,nighttime,winter,5100000
+b617da64-c330-4540-87b3-e3d45e578e2c,358,Italy,hyperion_8,low,9,13,daytime,fall,5100000
+1f809bb5-03b3-4127-be46-61de81ff5d90,2177,United States,hyperion_8.1,,1,18,nighttime,winter,5100000
+4a7194af-e7dc-45c4-b81d-ed2ca4ce9c4a,2698,Romania,hyperion_8.1,med,5,8,daytime,spring,5100000
+daf50f0f-eb59-4be8-b147-59597044dcb6,2209,United States,hyperion_8,low,11,14,daytime,fall,5100000
+11f567ae-778d-4fe7-8548-1f98e639f426,1423,Croatia,hyperion_8.1,,8,1,nighttime,summer,5100000
+863b8d9a-1e9b-4559-92fd-9dbb99772d04,2284,Germany,hyperion_8.1,,12,12,daytime,winter,5100000
+da36c322-a9b7-4505-9929-62b027bda732,2647,United States,hyperion_8.1,med,10,20,nighttime,fall,5100000
+5a35d2d9-12cb-4d67-9b70-de45a64f4cd5,2193,United States,hyperion_8,low,1,9,daytime,winter,5100000
+bb82eb49-6f44-4706-98b9-533b7374348e,2689,Slovakia,hyperion_8.1,,6,13,daytime,summer,5100000
+6ed67291-a3b0-4f2a-975f-300a3f11d7c9,1259,United States,hyperion_8.1,,3,5,nighttime,spring,5100000
+1f66267f-bfc3-416f-9c48-a16d99eb62d8,2321,Finland,hyperion_8,low,2,13,daytime,winter,5100000
+2f5d3a48-3282-44fe-9b13-3de87c8b520a,1419,Austria,hyperion_8.1,,9,3,nighttime,fall,5100000
+0be5cd66-847b-48d0-b575-0c54e1f632e6,3133,United States,hyperion_8.1,high,7,13,daytime,summer,5100000
+6d27a218-b4ef-416a-b190-3787eae730cf,1347,Germany,hyperion_8.1,,12,14,daytime,winter,5100000
+6270c35a-d018-43d3-b721-8419dd06aa0d,320,United States,hyperion_8,low,11,18,nighttime,fall,5100000
+1e383b24-d60e-4043-8bd2-6a819b70af00,2273,United States,hyperion_8.1,med,4,7,daytime,spring,5100000
+7b7375d2-8666-409e-9564-e3d5ae97ce40,3036,Sweden,hyperion_8.1,,1,19,nighttime,winter,5100000
+3e6e0046-5f69-482f-a90a-4982b95e3ef4,2259,United States,hyperion_8,low,8,8,daytime,summer,5100000
+1dfe6efb-e6af-46bf-b330-6afdfe662be9,349,Germany,hyperion_8.1,,10,14,daytime,fall,5100000
+3be88f9f-8e96-4c24-9127-6da0cf0d6ed4,1444,Estonia,hyperion_8.1,,2,19,nighttime,winter,5100000
+911e038d-68eb-41e4-983e-26531a27798c,2275,United States,hyperion_8.1,med,5,11,daytime,spring,5100000
+f9e92545-878b-4215-b54e-08da23ddc568,355,France,hyperion_8,low,12,0,nighttime,winter,5100000
+19ca36b2-c6a3-416e-96a4-ad7a0f6079fd,2644,United States,hyperion_8.1,,11,7,daytime,fall,5100000
+3e1033f2-2e83-4ec7-a7fb-e59d9a7a2959,1469,Poland,hyperion_8.1,,8,17,daytime,summer,5100000
+5ffa9636-d3ef-45e3-be7f-71b1870064a7,3104,United States,hyperion_8,low,1,0,nighttime,winter,5100000
+0b6387f5-b7bc-40e3-b245-5d0dd94c2040,2300,Germany,hyperion_8.1,high,9,12,daytime,fall,5100000
+96fd8e9d-b179-4332-994b-0e11db3e7034,1296,United States,hyperion_8.1,,3,21,nighttime,spring,5100000
+3e28d793-0f0a-47a8-ba62-598b044c45d2,2270,United States,hyperion_8.1,med,7,16,daytime,summer,5100000
+e81e0aff-da0a-47de-b5d8-d11fbe6fc744,360,Spain,hyperion_8,low,12,16,daytime,winter,5100000
+fdb09152-2b34-4f4a-842e-6955842befbe,1407,Greece,hyperion_8.1,,11,20,nighttime,fall,5100000
+46a286fb-f164-4a10-990e-f2152adc7dda,1310,United States,hyperion_8.1,,1,12,daytime,winter,5100000
+ab68042b-7a01-41aa-9f68-dfb2a765e38f,2695,Lithuania,hyperion_8.1,,8,3,nighttime,summer,5100000
+01460b45-8c01-4dea-b98d-c9ec2c4caa5a,3130,United States,hyperion_8,low,5,15,daytime,spring,5100000
+bbb3b02d-5a8a-4fa4-be07-8305493fcfe2,2299,Germany,hyperion_8.1,med,10,9,daytime,fall,5100000
+f0d50bb6-ac89-4fe2-a7d8-1b9800ff691e,1299,United States,hyperion_8.1,,2,20,nighttime,winter,5100000
+66b17a03-b307-43c7-bf9e-7dc1a964d710,2193,United States,hyperion_8,low,12,14,daytime,winter,5100000
+bf867197-ea42-4c72-9241-f1219373a1d5,359,Italy,hyperion_8.1,,6,5,nighttime,summer,5100000
+e230d4ef-6943-40ca-a366-944c48cdf968,3015,United States,hyperion_8.1,high,9,11,daytime,fall,5100000
+1939d5e1-9958-4b7f-b4eb-82a85a0175cc,1349,Germany,hyperion_8.1,,4,15,daytime,spring,5100000
+df7d2765-3aa4-48f8-b8b8-6384d05b182c,326,United States,hyperion_8,low,1,20,nighttime,winter,5100000
+ae00bf1a-7b9d-459b-9630-3a23a9ea1dbc,1433,Netherlands,hyperion_8.1,med,11,9,daytime,fall,5100000
+ba11d381-f9a0-473f-b8cf-a3681519fe18,331,United States,hyperion_8.1,,8,20,nighttime,summer,5100000
+20dceb44-b9af-44bc-beb4-2e66c62f7478,372,Czechia,hyperion_8,low,12,8,daytime,winter,5100000
+9982740b-fdc0-4961-917f-4ec1c0dbba00,1258,United States,hyperion_8.1,,3,7,daytime,spring,5100000
+10a42496-ed12-40a0-9c46-34dbd8efe967,2302,France,hyperion_8.1,,10,18,nighttime,fall,5100000
+b619e43f-b8ff-4ec9-8372-4accc46f7b5f,2299,Germany,hyperion_8.1,med,2,6,daytime,winter,5100000
+c5a75d65-ddd1-4eae-b596-5a3aa156b20f,2237,United States,hyperion_8,low,7,19,nighttime,summer,5100000
+43a6012e-0a2d-409d-9323-c16e3938e770,2676,Portugal,hyperion_8.1,,1,12,daytime,winter,5100000
+88088c5e-f6bb-41da-bad9-0ea31118542b,2625,United States,hyperion_8.1,,11,8,daytime,fall,5100000
+d8a211cf-c74c-4605-b671-7a804d746ecb,326,United States,hyperion_8,low,5,21,nighttime,spring,5100000
+64a68087-db67-44e5-8565-1ed2dc67262a,2691,Denmark,hyperion_8.1,,9,15,daytime,fall,5100000
+4446b1db-093b-435b-b646-096622262776,2278,United States,hyperion_8.1,high,12,20,nighttime,winter,5100000
+4075d707-e4c0-47d5-8f30-7958ad9c44b8,2299,Germany,hyperion_8.1,med,8,11,daytime,summer,5100000
+a809714e-d3aa-4a86-831a-832cf016bf5f,323,United States,hyperion_8,low,1,17,daytime,winter,5100000
+4be5cce1-3117-4a6a-99bd-fcc49500eaef,1395,Sweden,hyperion_8.1,,11,20,nighttime,fall,5100000
+ac37ffe8-178c-40d5-8d26-a009da881706,2636,United States,hyperion_8.1,,4,8,daytime,spring,5100000
+722ce305-76be-4fe5-8b40-eaea9eabf6ca,2320,Croatia,hyperion_8,low,7,9,daytime,summer,5100000
+d5b6e9a8-a9b5-4e35-b899-14f1529700ed,1304,United States,hyperion_8.1,,2,23,nighttime,winter,5100000
+5030d10a-5cad-450d-91c2-d87eb5530385,1359,Germany,hyperion_8.1,med,10,11,daytime,fall,5100000
+84daedaf-3e3b-4810-8398-8f0d06704ef0,1296,United States,hyperion_8.1,,12,20,nighttime,winter,5100000
+4af0f033-9550-4782-b3f4-b9aea784f221,372,Slovenia,hyperion_8,low,6,14,daytime,summer,5100000
+1b1d6083-462b-4709-bcc6-e89480c80bcc,1283,United States,hyperion_8.1,,3,8,daytime,spring,5100000
+1b360dc0-e129-4664-b4d6-ea1d684e81a3,2699,Bulgaria,hyperion_8.1,,9,18,nighttime,fall,5100000
+93cb287a-fe70-43eb-bf42-7d077a23c9e8,2650,United States,hyperion_8.1,high,1,9,daytime,winter,5100000
+5831d19f-2532-48ef-8133-ac08d5caeab2,2325,Belgium,hyperion_8,low,8,19,nighttime,summer,5100000
+89cdfdc1-087c-4fc9-9700-7a4de6c2ec1d,1351,Germany,hyperion_8.1,,12,17,daytime,winter,5100000
+b9711efa-193f-4167-a536-de108fc3cd77,3013,United States,hyperion_8.1,med,11,14,daytime,fall,5100000
+ce27b3fb-1a10-48f8-8d97-8909a57b905d,357,Italy,hyperion_8,low,5,0,nighttime,spring,5100000
+82926b58-ebfb-4d2f-a28c-4daaafbdc8e4,1292,United States,hyperion_8.1,,2,15,daytime,winter,5100000
+6d3665ac-66b9-4446-a513-bb4d5d81f77a,1400,Greece,hyperion_8.1,,9,18,nighttime,fall,5100000
+f63de29e-e2a2-4588-8f01-7c6b41ffe8b5,1324,United States,hyperion_8.1,med,8,17,daytime,summer,5100000
+eecddcff-6237-476a-9a17-2c36a4a1f9ea,2319,Austria,hyperion_8,low,1,9,daytime,winter,5100000
+bc16dfd2-18d1-453c-becc-337df94c1427,1295,United States,hyperion_8.1,,10,20,nighttime,fall,5100000
+d85fdc3d-9f1e-4bfd-8fcd-1844e0ca3854,3023,Germany,hyperion_8.1,,4,16,daytime,spring,5100000
+1f87f2ec-133e-4c8e-abe0-e7feb8d31820,2206,United States,hyperion_8,low,12,18,nighttime,winter,5100000
+bf01ed08-8b3f-4a91-a053-d7cc035da0fc,2320,Finland,hyperion_8.1,,7,13,daytime,summer,5100000
+737db633-a37c-4607-8dd8-6bc7eb1d5cfc,2649,United States,hyperion_8.1,high,11,10,daytime,fall,5100000
+84a5b4c4-de15-42ea-be3b-f8fe9c816d37,1382,France,hyperion_8.1,med,1,18,nighttime,winter,5100000
+101ff473-932a-4fc1-871a-52bb6827aad8,2185,United States,hyperion_8,low,5,12,daytime,spring,5100000
+ce032491-9e3d-4a8b-917c-38a7ba2cdcb3,2688,Estonia,hyperion_8.1,,2,18,nighttime,winter,5100000
+c5891292-d7d3-4f20-994a-0283d6cc82b6,3008,United States,hyperion_8.1,,8,13,daytime,summer,5100000
+40052dbe-ed1b-4b7f-bffc-4345f6f370e4,1347,Germany,hyperion_8.1,,11,8,daytime,fall,5100000
+2e2b3f76-59ad-4b55-a190-6de9e4011548,2241,United States,hyperion_8,low,12,23,nighttime,winter,5100000
+b4af444b-cf1b-4504-9855-34412aee9e66,362,Spain,hyperion_8.1,med,3,6,daytime,spring,5100000
+db3cf4f4-a6f3-450f-a9bf-ff3956d442ab,2630,United States,hyperion_8.1,,9,18,nighttime,fall,5100000
+504daf78-df26-487f-81f9-1e053fca0359,2254,United States,hyperion_8,low,6,10,daytime,summer,5100000
+14867810-15e8-4cf1-9972-932c966a2683,1353,Germany,hyperion_8.1,,1,17,daytime,winter,5100000
+3e8779b4-7f05-464c-b64b-239e39aa1355,2633,United States,hyperion_8.1,,10,19,nighttime,fall,5100000
+6b3c80fc-6ddd-4ce8-8e63-5920ae3253be,1462,Lithuania,hyperion_8.1,,8,16,daytime,summer,5100000
+72efef56-b92a-45d9-89c7-25cce6bb1bd6,305,United States,hyperion_8,low,12,22,nighttime,winter,5100000
+94b2ebf8-edbd-4edb-a197-7561578f99e0,1473,Romania,hyperion_8.1,med,5,8,daytime,spring,5100000
+4716ff5f-9e97-4dc6-aa4e-04923a05d0a9,2278,United States,hyperion_8.1,high,2,10,daytime,winter,5100000
+9458b063-876f-4c3b-b3ff-da636944c083,3019,Germany,hyperion_8.1,,11,18,nighttime,fall,5100000
+e802afe2-ef6b-4f96-b789-7aa4d742f553,320,United States,hyperion_8,low,7,12,daytime,summer,5100000
+646aa801-c28d-43da-859e-3affa982f28e,1408,Portugal,hyperion_8.1,,1,20,nighttime,winter,5100000
+b97ca859-a542-4c58-b082-ccb6222fa156,2275,United States,hyperion_8.1,med,9,10,daytime,fall,5100000
+e56ff946-03ac-4a1f-9a34-fb7976da0714,358,Italy,hyperion_8,low,3,15,daytime,spring,5100000
+05f35f91-18b9-43c9-ad47-943d63b95897,2636,United States,hyperion_8.1,,12,19,nighttime,winter,5100000
+378de3f6-4088-45c8-b918-b80bcd75a3e9,356,France,hyperion_8.1,,8,14,daytime,summer,5100000
+67d5fed4-418b-4573-83c9-560476c8a332,2295,Germany,hyperion_8,low,10,19,nighttime,fall,5100000
+aa7d7482-41d0-4ccf-9586-93353774be48,2170,United States,hyperion_8.1,,2,11,daytime,winter,5100000
+42895cd8-deb3-4a58-a72d-559aed147c30,2278,United States,hyperion_8.1,high,4,12,daytime,spring,5100000
+48a47c5c-3ab9-4f81-aa97-59e91f257256,1393,Sweden,hyperion_8.1,,11,20,nighttime,fall,5100000
+25ab7568-6ae9-4714-a7f9-4fab5f3f87d7,2214,United States,hyperion_8,low,1,15,daytime,winter,5100000
+b0de2e69-3f62-41b0-85d3-6de171b0d4b7,3046,Croatia,hyperion_8.1,,8,21,nighttime,summer,5100000
+d6cf2546-a83a-4c6a-b092-eeab9ab92c83,337,United States,hyperion_8.1,med,12,11,daytime,winter,5100000
+c9234723-b9c1-4a1a-8aa6-904231e70bbe,2659,Germany,hyperion_8.1,,9,10,daytime,fall,5100000
+df4de960-dee5-44f6-bf80-9845b1dd0f9f,2218,United States,hyperion_8,low,5,19,nighttime,spring,5100000
+45baa092-336b-4139-86d2-10e9b34a62ed,2690,Slovakia,hyperion_8.1,,6,11,daytime,summer,5100000
+bb5f4a6a-87ef-48a0-9c5d-45e9fecba03c,2275,United States,hyperion_8.1,med,1,20,nighttime,winter,5100000
+6fd9702e-dcf0-4a20-a64f-82bebad5262b,2328,Poland,hyperion_8,low,11,16,daytime,fall,5100000
+8cc32559-5609-4eb1-8e2b-a8ddd76a2fb4,1291,United States,hyperion_8.1,,12,14,daytime,winter,5100000
+4c1ddfca-7b7e-4f8b-9201-556347d13652,2673,Greece,hyperion_8.1,,8,5,nighttime,summer,5100000
+a42cd55e-0862-4b87-ad7e-f908b85d0624,2300,Germany,hyperion_8.1,high,10,14,daytime,fall,5100000
+f4a3a9bc-6be8-4777-b68e-71952961e8e4,319,United States,hyperion_8,low,2,23,nighttime,winter,5100000
+8f723a15-0df6-47f1-9272-d9c88f7a81db,2165,United States,hyperion_8.1,,3,10,daytime,spring,5100000
+baa9470f-4d4b-4f2c-8879-f57a7c317bd5,1432,Netherlands,hyperion_8.1,med,11,9,daytime,fall,5100000
+f02ca143-2068-49e0-9d2e-cbb3f4b84a15,2168,United States,hyperion_8.1,,7,19,nighttime,summer,5100000
+b533eee9-f7e6-4e4d-bcc9-b11c72f33448,2325,Czechia,hyperion_8,low,12,10,daytime,winter,5100000
+ebdc6a7e-c7ce-47fe-a9a1-ec88b7d406c5,1342,Germany,hyperion_8.1,,4,23,nighttime,spring,5100000
+687c4704-36df-4252-bf29-e2ca82d7aa69,2635,United States,hyperion_8.1,,1,12,daytime,winter,5100000
+943d2113-0884-46c2-b502-6473bfa08099,2195,United States,hyperion_8,low,9,14,daytime,fall,5100000
+817be31b-d2dd-46b1-b69f-98b90d9ca74d,3044,Spain,hyperion_8.1,med,2,21,nighttime,winter,5100000
+bfb38623-090a-4c67-bcc1-43a532fba1b0,335,United States,hyperion_8.1,,8,6,daytime,summer,5100000
+92e60781-790a-46ec-b4fd-ceacef374000,369,Finland,hyperion_8,low,10,18,nighttime,fall,5100000
+094be0f4-1f7d-4401-a1c1-5213fd5f1945,1317,United States,hyperion_8.1,,5,14,daytime,spring,5100000
+5b5099ee-3ed1-49b5-8632-4973e23aea6e,1372,Germany,hyperion_8.1,high,1,11,daytime,winter,5100000
+709bb148-b05e-417e-a428-64f6d45e70e9,1293,United States,hyperion_8.1,,11,19,nighttime,fall,5100000
+9526dba6-ad7c-4bd5-b78a-1b47d7ed3e54,2319,Austria,hyperion_8,low,7,15,daytime,summer,5100000
+55f6c661-3e8f-42aa-af0d-a174cb59ce17,1390,Italy,hyperion_8.1,med,12,19,nighttime,winter,5100000
+5e8e1859-9ccb-4918-95d3-157672b76937,2171,United States,hyperion_8.1,,3,17,daytime,spring,5100000
+de2fc1ae-6c1a-4926-9bc6-19bc0168f71c,2301,France,hyperion_8.1,,9,14,daytime,fall,5100000
+6c9e70eb-c0a8-4cba-8bd2-40583925c58a,308,United States,hyperion_8,low,12,18,nighttime,winter,5100000
+1ba7a6e5-01bb-4c4d-9015-9891fa9ca649,1346,Germany,hyperion_8.1,,8,16,daytime,summer,5100000
+6e88904d-fdd5-4380-ac91-89416681dca5,2274,United States,hyperion_8.1,med,1,15,daytime,winter,5100000
+3b7f0b59-e146-4b71-9615-5c4f036af665,2323,Denmark,hyperion_8,low,11,23,nighttime,fall,5100000
+d10a55e7-de0e-4036-b929-05894514234c,1272,United States,hyperion_8.1,,5,6,daytime,spring,5100000
+ddcd80ee-554b-4383-987e-cb94dfcfa0d1,1444,Estonia,hyperion_8.1,,2,19,nighttime,winter,5100000
+26e80dc6-e7f4-4e66-aeed-f1984ae36fdb,3105,United States,hyperion_8,low,6,17,daytime,summer,5100000
+2c79a96a-6ba4-4c7e-a777-da4203384493,3103,United States,hyperion_8.1,,10,12,daytime,fall,5100000
+984e737a-5eb9-41b6-81f2-98a0e5f34bff,2660,Germany,hyperion_8.1,med,12,19,nighttime,winter,5100000
+d979b916-1603-4fbb-8ce1-93e34970531f,1313,United States,hyperion_8.1,,4,13,daytime,spring,5100000
+42a0cbfb-06b6-4585-b623-0c7eb7f2ae95,364,Belgium,hyperion_8,low,8,1,nighttime,summer,5100000
+ea49267d-1bcf-4c22-8ed5-9897ddcd9a24,2278,United States,hyperion_8.1,high,9,12,daytime,fall,5100000
+cd2289fc-d61a-43cb-b9c7-b2cc78cda209,2311,Sweden,hyperion_8.1,,1,16,daytime,winter,5100000
+69b54cd6-ad57-4c68-b20d-770f67de5653,1289,United States,hyperion_8.1,,11,23,nighttime,fall,5100000
+0368ba79-ccd4-4190-a0c0-5c3e409523da,342,Germany,hyperion_8,low,2,13,daytime,winter,5100000
+432ff236-4f06-430d-8573-631e4c6b9875,338,United States,hyperion_8.1,med,7,19,nighttime,summer,5100000
+75d5ae33-5f53-4638-89ed-3365527a5db4,2676,Portugal,hyperion_8.1,,1,12,daytime,winter,5100000
+5546bd97-e7fb-4aec-a6f6-1e7be2257edb,2268,United States,hyperion_8,low,5,16,daytime,spring,5100000
+f482ff7d-fb91-49c0-9a7c-26762e9a3cf2,1463,Lithuania,hyperion_8.1,,8,22,nighttime,summer,5100000
+d43709cf-0be9-41c9-ae89-ba3a1d8185bf,1315,United States,hyperion_8.1,,10,9,daytime,fall,5100000
+03875623-eda4-4970-b2f3-a74c6df91a2e,1366,Germany,hyperion_8.1,med,12,19,nighttime,winter,5100000
+6ba156c3-5930-4ad5-9d34-ac914d0795a6,2241,United States,hyperion_8,low,11,8,daytime,fall,5100000
+98a4ff03-0294-47c1-9b40-e4d40fa5f242,356,France,hyperion_8.1,,3,9,daytime,spring,5100000
+a7fa919f-8e93-4f4c-ba9b-16a7cca997b8,1330,United States,hyperion_8.1,high,12,18,nighttime,winter,5100000
+9d3de1d2-dcf0-4357-986e-96f37c5f0bc7,1402,Greece,hyperion_8.1,,9,17,daytime,fall,5100000
+0e8fba9d-8d20-454d-ac5c-9625ca015987,2187,United States,hyperion_8,low,8,20,nighttime,summer,5100000
+68f6e943-dc1f-4b5d-8565-f714e2d6606a,2668,Italy,hyperion_8.1,,2,6,daytime,winter,5100000
+f2cf0b2e-e3d8-4025-bbfe-4fd8e0e14ce3,2274,United States,hyperion_8.1,med,4,11,daytime,spring,5100000
+16dc4b97-0705-4a01-bc71-48f6db85ca5f,2286,Germany,hyperion_8.1,,1,19,nighttime,winter,5100000
+fd7d6c35-58d8-408b-9d34-a2e6a852cc48,2264,United States,hyperion_8,low,11,9,daytime,fall,5100000
+5d2d8d82-ada4-4e57-b537-45aaa20b9d3f,1424,Croatia,hyperion_8.1,,8,4,nighttime,summer,5100000
+1d90e877-d7b0-45bf-b1ff-af76f38c1d89,2217,United States,hyperion_8,low,12,16,daytime,winter,5100000
+bcfed1f9-c097-4cf2-98b2-9a658d50c9c8,1473,Romania,hyperion_8.1,,9,7,daytime,fall,5100000
+bb16fa5f-da39-489b-a613-5dd4db7da5ac,2272,United States,hyperion_8.1,med,5,3,nighttime,spring,5100000
+5abd7d90-449d-4bac-80ae-4c2bb0662eaa,3021,Germany,hyperion_8.1,,7,15,daytime,summer,5100000
+b235cdc9-9e64-4e1f-b098-f156c7072385,2188,United States,hyperion_8,low,1,0,nighttime,winter,5100000
+c94c8ac1-eb80-431c-8c39-f69ba5226024,3042,Spain,hyperion_8.1,,2,7,daytime,winter,5100000
+9b0c6531-cdb0-4770-bd49-3e175727b017,2277,United States,hyperion_8.1,high,10,19,nighttime,fall,5100000
+40c3cf9f-55a4-4a42-8e0c-110f66823ee3,1476,Latvia,hyperion_8.1,,3,14,daytime,spring,5100000
+51d7a2b4-0dcb-4d48-b719-a4d95f3bbdcb,2218,United States,hyperion_8,low,6,15,daytime,summer,5100000
+bd06a2be-b9b9-4d94-b949-516f2ada8d29,3019,Germany,hyperion_8.1,,11,18,nighttime,fall,5100000
+86434166-cafe-473a-b0fd-71201584d063,1326,United States,hyperion_8.1,med,12,13,daytime,winter,5100000
+a4945106-105d-4e80-b1a7-349834b462be,2318,Austria,hyperion_8,low,1,15,daytime,winter,5100000
+bc9a68d8-b79c-4a6c-9c38-e0e483d77c7b,331,United States,hyperion_8.1,,9,21,nighttime,fall,5100000
+557f10de-715e-4222-9be8-a6fd0fa79dfb,1431,Netherlands,hyperion_8.1,,8,15,daytime,summer,5100000
+ce86ed80-009c-4cf5-9b2e-0763d7ec7f94,2276,United States,hyperion_8.1,med,4,1,nighttime,spring,5100000
+f3bf02a8-b555-46ee-b1d9-24a038a8aa0c,372,Czechia,hyperion_8,low,12,16,daytime,winter,5100000
+f7c908ad-007e-4fef-a6e0-c644978437f3,2998,United States,hyperion_8.1,,10,11,daytime,fall,5100000
+ac25a5c1-74b4-49a6-939c-fb188cd1a4e7,2300,Germany,hyperion_8.1,high,7,19,nighttime,summer,5100000
+df9e3fb4-1250-49ed-b603-0e79f0e658fd,2164,United States,hyperion_8.1,,2,9,daytime,winter,5100000
+42f68c67-d775-4e2a-8e75-55192fb2a54a,353,France,hyperion_8,low,11,23,nighttime,fall,5100000
+6c0b9ca8-5ff1-4e1f-810e-bbcb53302881,1294,United States,hyperion_8.1,,5,9,daytime,spring,5100000
+aa66443b-2435-4027-9adc-bac085790ce8,1435,Finland,hyperion_8.1,,1,13,daytime,winter,5100000
+12bfb44c-d8d7-424c-8597-54a0d0812e63,319,United States,hyperion_8,low,8,19,nighttime,summer,5100000
+7be2a574-a493-4412-88cd-cd3f2e78bdbb,352,Germany,hyperion_8.1,med,9,10,daytime,fall,5100000
+ead56030-d3d7-494a-8f7b-9ba6419e0fd7,2671,Sweden,hyperion_8.1,,12,20,nighttime,winter,5100000
+8d217a43-9d89-467c-ab18-e4c09e7cabe3,2238,United States,hyperion_8,low,3,10,daytime,spring,5100000
+d8c4fb29-1362-49f8-b0f3-a099476d17f9,1258,United States,hyperion_8.1,,11,17,daytime,fall,5100000
+75ce927e-287b-4d5a-83bb-e12bc3d98caf,1392,Italy,hyperion_8.1,med,1,19,nighttime,winter,5100000
+7fe3b398-7392-4329-9afa-ea61ae1701b0,1270,United States,hyperion_8.1,,6,14,daytime,summer,5100000
+9cea108c-0fd5-4394-9f4a-a8492de052b7,2324,Denmark,hyperion_8,low,2,20,nighttime,winter,5100000
+8dfcfe6f-0fbc-4c6b-ad28-ba6c96f5e798,2628,United States,hyperion_8.1,,10,7,daytime,fall,5100000
+736826c3-766b-469b-a836-51fe69a0598f,2664,Germany,hyperion_8.1,high,5,10,daytime,spring,5100000
+be5f55a7-6442-4777-ba38-e82fddbe5a6b,3053,Estonia,hyperion_8.1,,12,18,nighttime,winter,5100000
+0611428c-24d4-43c2-885d-0589b830b343,2247,United States,hyperion_8,low,8,11,daytime,summer,5100000
+9a78f5cd-9eaf-4450-b803-85e48aa833d5,1292,United States,hyperion_8.1,,11,19,nighttime,fall,5100000
+5537d96f-dd40-4e15-9e95-61dcfabe4eb3,1410,Portugal,hyperion_8.1,med,1,12,daytime,winter,5100000
+899086cc-b0dd-4d02-b0d4-7b888c74728d,2313,Greece,hyperion_8,low,7,11,daytime,summer,5100000
+069928b5-4583-4be7-aefe-1966b35d85ea,3001,United States,hyperion_8.1,,4,18,nighttime,spring,5100000
+09e4449a-18c8-4ce2-b2e2-6bafdae29da2,3110,Germany,hyperion_8.1,,9,17,daytime,fall,5100000
+d72658ab-1353-4697-b154-f8f7a481462a,1318,United States,hyperion_8.1,med,12,18,nighttime,winter,5100000
+35bd7d11-ef3d-49b6-9422-a3dcb4457743,2188,United States,hyperion_8,low,2,14,daytime,winter,5100000
+16a8f7ac-335e-49db-afdf-a35b22970b7e,1439,Slovenia,hyperion_8.1,,7,17,daytime,summer,5100000
+b567e583-10e1-4dbf-991a-2de1d2776e5f,1264,United States,hyperion_8.1,,10,21,nighttime,fall,5100000
+c6505327-c334-4e23-93e0-d73f217f5eb3,2322,Slovakia,hyperion_8,low,3,10,daytime,spring,5100000
+4bc438fa-374c-486b-bf4f-984b81ba377d,2664,Germany,hyperion_8.1,high,1,11,daytime,winter,5100000
+57a54123-3f75-4acd-9c46-7814487cb717,1298,United States,hyperion_8.1,,11,3,nighttime,fall,5100000
+92811192-29ea-43ec-9f51-2c8374c4703b,1288,United States,hyperion_8.1,,8,11,daytime,summer,5100000
+495519c1-46f3-483f-8bd4-139c6ec897ce,2304,France,hyperion_8,low,12,3,nighttime,winter,5100000
+597954ad-fd61-4534-9ddb-2f486f052d19,340,United States,hyperion_8.1,med,5,17,daytime,spring,5100000
+48f1d692-382b-47a0-99fe-a826f9cfff56,3063,Luxembourg,hyperion_8.1,,9,16,daytime,fall,5100000
+8ff5ae9c-2359-48c3-8059-d12c124c1b90,3107,United States,hyperion_8,low,1,0,nighttime,winter,5100000
+daa54d96-5246-463b-84ca-6a9a88f5b8da,1353,Germany,hyperion_8.1,,8,15,daytime,summer,5100000
+3964e8ea-d341-487f-b0b7-299cc17e3988,1277,United States,hyperion_8.1,,11,20,nighttime,fall,5100000
+acf7b03e-a354-4932-a32f-5c4a93a47705,2317,Spain,hyperion_8.1,med,2,8,daytime,winter,5100000
+4ee70f88-f036-4029-adc6-f93fb5e22f0a,2325,Lithuania,hyperion_8,low,4,11,daytime,spring,5100000
+bd02b260-dedd-4661-b8d8-0164b1c7db1f,1286,United States,hyperion_8.1,,12,21,nighttime,winter,5100000
+0528c97b-75bc-4ebb-8445-3974c6a18dca,3014,United States,hyperion_8.1,high,6,9,daytime,summer,5100000
+16793018-998f-4cb9-9ef0-fd6126a36792,1469,Poland,hyperion_8.1,,10,20,nighttime,fall,5100000
+470aeb0c-a818-4c03-a1fd-b39237f9cfaf,3112,Germany,hyperion_8,low,1,13,daytime,winter,5100000
+8cc58e00-385c-4879-9cf8-b429802cad1f,1287,United States,hyperion_8.1,,9,6,daytime,fall,5100000
+af9e1918-3505-4cb2-8aec-38fa27cb1f76,3048,Croatia,hyperion_8.1,,8,20,nighttime,summer,5100000
+f3b83f0d-73a4-4cbb-b9db-0bf60b3a30f9,2265,United States,hyperion_8,low,5,13,daytime,spring,5100000
+92e679b6-cf4d-4378-8435-1461ae498fda,1390,Italy,hyperion_8.1,med,12,19,nighttime,winter,5100000
+27e607be-ba40-4832-8d83-33a995e03e0d,1264,United States,hyperion_8.1,,11,8,daytime,fall,5100000
+b6ba0554-d7e4-4caa-91f1-f32cc629575f,2283,Germany,hyperion_8.1,,2,12,daytime,winter,5100000
+1c4a3bda-d8df-49b8-9e63-6700661fd2ef,303,United States,hyperion_8,low,3,20,nighttime,spring,5100000
+259f004c-e1df-4983-8191-74aa3e34a76f,2327,Belgium,hyperion_8.1,med,7,9,daytime,summer,5100000
+231924ae-03a8-4b3c-b194-7d0d2b3d1816,1290,United States,hyperion_8.1,,1,20,nighttime,winter,5100000
+f2d7dde7-6fce-4384-a584-53d36d9127a5,2311,Sweden,hyperion_8,low,10,9,daytime,fall,5100000
+0314ed41-0195-4381-a548-53654d1b07a8,3008,United States,hyperion_8.1,,8,13,daytime,summer,5100000
+450437a1-2dd3-464d-8230-14c54612dfe5,3134,United States,hyperion_8.1,high,12,22,nighttime,winter,5100000
+f3ef58e6-cabf-4e8f-b606-0ab86fe7b793,1343,Germany,hyperion_8.1,,11,12,daytime,fall,5100000
+ab1916e3-6d32-4f57-b9a6-f607aa930b0a,2262,United States,hyperion_8,low,5,18,nighttime,spring,5100000
+4223a636-96ab-45a5-9e0c-142e10f372b8,1379,France,hyperion_8.1,med,2,13,daytime,winter,5100000
+84321d90-6649-4628-900e-498bd294f35c,2631,United States,hyperion_8.1,,9,15,daytime,fall,5100000
+7b763db3-81d5-471b-9407-a3b61e2a42af,3044,Austria,hyperion_8.1,,8,21,nighttime,summer,5100000
+4b7857e7-a272-4203-b741-52ce31070852,2266,United States,hyperion_8,low,1,9,daytime,winter,5100000
+73d1726d-4849-4aec-aac2-a4dd26fb0122,2313,Greece,hyperion_8.1,,4,21,nighttime,spring,5100000
+165f20db-74db-4bb8-bc39-abe3671a6d11,1361,Germany,hyperion_8.1,med,12,16,daytime,winter,5100000
+50e4807c-dfd4-435c-acd4-b237975eb72a,2258,United States,hyperion_8,low,11,17,daytime,fall,5100000
+a33f8c4a-1d25-4dc2-9080-d1128f76e75d,1259,United States,hyperion_8.1,,6,20,nighttime,summer,5100000
+b6aa3dc7-3e46-4ff2-8020-d48a5a3a0d26,1435,Finland,hyperion_8.1,,1,13,daytime,winter,5100000
+63f47e1b-95e3-48ff-85a1-1227c001bbf5,2280,United States,hyperion_8.1,high,10,19,nighttime,fall,5100000
+05329def-5839-4436-a75a-b24f4126eb74,2313,Portugal,hyperion_8,low,3,13,daytime,spring,5100000
+2f1adbfb-b724-4e94-9fd1-8b8e9dfe6559,1477,Hungary,hyperion_8.1,,12,9,daytime,winter,5100000
+8d93d668-8638-4d88-aaca-a672fde83f12,337,United States,hyperion_8.1,med,7,1,nighttime,summer,5100000
+0da1db06-48c9-4e55-93a9-523b64f81a26,2294,Germany,hyperion_8,low,9,10,daytime,fall,5100000
+a53a0610-c961-40aa-a9f9-f08a92dfbb57,1289,United States,hyperion_8.1,,2,19,nighttime,winter,5100000
+4901bd6b-02e5-4397-a93b-9e66dc99020d,2177,United States,hyperion_8.1,,8,13,daytime,summer,5100000
+ad1a507c-109f-43df-95a8-dfacc274bac5,1387,Italy,hyperion_8.1,,11,7,daytime,fall,5100000
+fc587a32-6d08-4628-8c55-e72a68a99a5a,2203,United States,hyperion_8,low,5,20,nighttime,spring,5100000
+00bf4866-29ff-420f-8022-9ce0c3e7d7c0,3026,Germany,hyperion_8.1,med,12,11,daytime,winter,5100000
+13155550-b9a4-4907-8395-a512d0d053a2,1265,United States,hyperion_8.1,,1,21,nighttime,winter,5100000
+14314b88-fcb7-43da-b46f-e210189887e6,2320,Netherlands,hyperion_8,low,9,13,daytime,fall,5100000
+01314207-4d26-4a84-bf29-227bf517afeb,2633,United States,hyperion_8.1,,8,13,daytime,summer,5100000
+a572c453-a78f-4558-af67-161f1951c504,1445,Estonia,hyperion_8.1,,11,18,nighttime,fall,5100000
+f31b4eb5-9618-4fc7-a0f5-2f4349446f33,1335,United States,hyperion_8.1,high,4,11,daytime,spring,5100000
+1b517d83-a4ca-4153-a7a4-a4eb10abb020,372,Czechia,hyperion_8,low,12,20,nighttime,winter,5100000
+8cf7348a-6353-4470-9cfc-31c00d332a6a,3110,Germany,hyperion_8.1,,2,12,daytime,winter,5100000
+ffdfa032-9f97-40a3-bbd1-cf6075ff4fb7,3013,United States,hyperion_8.1,med,10,17,daytime,fall,5100000
+65d6c4c1-d9e4-4a52-868e-59f03ba2731f,372,Romania,hyperion_8.1,,7,18,nighttime,summer,5100000
+a21f8fdb-51e6-41ba-8cd3-228b4e98d68e,301,United States,hyperion_8,low,3,11,daytime,spring,5100000
+8c983a6e-60b4-432e-b512-24fe082fd930,1414,Spain,hyperion_8.1,,1,18,nighttime,winter,5100000
+cb569144-7f0f-4ef8-a3ca-d21edeb0eea0,339,United States,hyperion_8.1,med,8,16,daytime,summer,5100000
+dcae9723-bd20-4974-861f-6463664899da,2303,France,hyperion_8,low,11,8,daytime,fall,5100000
+f204f894-1421-4d22-9364-cae777c627a7,3000,United States,hyperion_8.1,,12,3,nighttime,winter,5100000
+7ead059a-cad7-4e6b-9692-9444a56b9b79,349,Germany,hyperion_8.1,,5,8,daytime,spring,5100000
+354bc734-5eb5-4e77-9162-b563a77ba1e8,2237,United States,hyperion_8,low,9,18,nighttime,fall,5100000
+86ab1f91-10f9-4525-8e88-eca19f26b9b5,1274,United States,hyperion_8.1,,1,10,daytime,winter,5100000
+58b7510f-50a6-4137-9b9b-86d700917bae,2311,Sweden,hyperion_8.1,,6,8,daytime,summer,5100000
+7a212a22-869b-4a4f-aa94-cdd17a5d8442,2650,United States,hyperion_8.1,high,2,18,nighttime,winter,5100000
+ec75177c-ce32-496c-bfee-40945afc34c9,2293,Germany,hyperion_8,low,10,11,daytime,fall,5100000
+c26f1604-8440-454c-93f4-0f64f0c44c1c,3048,Croatia,hyperion_8.1,med,4,6,daytime,spring,5100000
+116e1eee-55e1-4843-8438-f366a21c65cd,333,United States,hyperion_8.1,,8,3,nighttime,summer,5100000
+3a0cd023-69b0-482c-8275-b33dc4983912,1278,United States,hyperion_8.1,,12,16,daytime,winter,5100000
+dd4a4af7-384a-4635-bfcf-dd31d6d8a022,364,Denmark,hyperion_8,low,11,23,nighttime,fall,5100000
+ba59cbae-586f-4949-ab1c-5bd9e30e65c7,1287,United States,hyperion_8.1,,1,8,daytime,winter,5100000
+3cbf93c1-114b-42bb-875e-321e45b4ed7a,1462,Lithuania,hyperion_8.1,,7,20,nighttime,summer,5100000
+74766da3-3af3-4b11-a8ab-d6f97b36f35e,3145,Germany,hyperion_8,low,9,15,daytime,fall,5100000
+5cba8fea-ff7a-4369-8afe-3d76dd0dfc0d,2274,United States,hyperion_8.1,med,5,10,daytime,spring,5100000
+f0235a64-1505-4a80-9098-81103ed1996d,1388,Italy,hyperion_8.1,,2,20,nighttime,winter,5100000
+572c1191-a9d2-4303-a9e8-ed6faa412ef3,3134,United States,hyperion_8.1,high,11,10,daytime,fall,5100000
+b21ab0c3-8c62-4dcc-9ff3-863a468155b1,2207,United States,hyperion_8,low,12,13,daytime,winter,5100000
+2e3d788f-8c6a-4383-af59-c547583a2a38,1407,Greece,hyperion_8.1,,8,4,nighttime,summer,5100000
+024bd51f-a172-4108-aef0-a421c535bee3,2270,United States,hyperion_8.1,med,3,16,daytime,spring,5100000
+4c34a8be-8c12-4f5f-9409-f5ef71357780,1355,Germany,hyperion_8.1,,1,18,nighttime,winter,5100000
+5852556b-d777-4ca8-9229-b266e608297a,2267,United States,hyperion_8,low,10,12,daytime,fall,5100000
+32937eb4-a790-411f-9685-4f41f6ec91d7,355,France,hyperion_8.1,,6,6,daytime,summer,5100000
+a5f74345-7f41-4b68-b678-21aa032ccf17,340,United States,hyperion_8.1,med,12,19,nighttime,winter,5100000
+bb39c702-568f-4435-b46c-0155b1d27da9,2318,Austria,hyperion_8,low,9,13,daytime,fall,5100000
+6c932578-b9e2-4355-a71c-415e6cb70c29,1268,United States,hyperion_8.1,,5,3,nighttime,spring,5100000
+6b0991ab-b219-4751-8c59-650b6a93714e,349,Germany,hyperion_8.1,,1,16,daytime,winter,5100000
+3330527c-f05d-44fd-80ed-8f7070f728aa,299,United States,hyperion_8,low,8,15,daytime,summer,5100000
+79f44d1c-0952-49d1-850d-656a63876d5e,2321,Finland,hyperion_8.1,,11,19,nighttime,fall,5100000
+7171354f-dced-498b-a50a-545c053c7b0e,3135,United States,hyperion_8.1,high,2,9,daytime,winter,5100000
+5b055c5f-f3ed-4c22-8ba3-8acd7992c1e4,1466,Belgium,hyperion_8.1,med,3,20,nighttime,spring,5100000
+734ed4cd-df8a-4c8b-8b81-2e140b980770,1289,United States,hyperion_8.1,,10,7,daytime,fall,5100000
+45065a09-4b63-4ecf-a482-67d332bdbea8,2291,Germany,hyperion_8,low,12,15,daytime,winter,5100000
+ec6b62e0-9b63-47e7-af9a-13774b379fe2,2992,United States,hyperion_8.1,,7,4,nighttime,summer,5100000
+860b66c7-491a-4176-b597-13ab1f1718a3,3040,Portugal,hyperion_8.1,,2,16,daytime,winter,5100000
+28de7c1f-e594-4a49-a771-5fb96a7ea9ed,2244,United States,hyperion_8,low,11,18,nighttime,fall,5100000
+17099f19-c495-446b-86ce-459322bd7ae6,1416,Spain,hyperion_8.1,,8,14,daytime,summer,5100000
+3c4b60f2-60cb-4245-b030-44eb72ea2b20,2274,United States,hyperion_8.1,med,4,10,daytime,spring,5100000
+92f00b2a-c7e9-4ed1-b5a7-07b9e7004962,1468,Poland,hyperion_8.1,,1,21,nighttime,winter,5100000
+08c6c8a9-4bd7-42db-ae73-82ab11a1a9ec,2257,United States,hyperion_8,low,9,11,daytime,fall,5100000
+ac99ca69-c382-49bf-b6b5-e424669578c6,2657,Germany,hyperion_8.1,,12,19,nighttime,winter,5100000
+162b932e-d243-4fe8-9fc1-2efb8a641e38,1330,United States,hyperion_8.1,high,5,17,daytime,spring,5100000
+15fadadf-858c-4685-b189-2bc347327dd4,2308,Italy,hyperion_8,low,8,17,daytime,summer,5100000
+09a6f9e0-d49b-4ca0-a3f2-942339203494,334,United States,hyperion_8.1,,10,19,nighttime,fall,5100000
+ce2afef3-ae8f-4529-bb69-3bfab010ea5c,2671,Sweden,hyperion_8.1,,1,11,daytime,winter,5100000
+b5690ca8-a135-499b-8240-44ab89e5c43c,2274,United States,hyperion_8.1,med,11,5,nighttime,fall,5100000
+658c3d45-df49-4804-bd05-a6367545cca8,344,Germany,hyperion_8,low,12,12,daytime,winter,5100000
+819737e8-3f95-4bd1-8f98-8309f2b69e5f,1450,Slovakia,hyperion_8.1,,7,15,daytime,summer,5100000
+36b10c63-0950-4174-baae-c932c89816a4,1270,United States,hyperion_8.1,,3,5,nighttime,spring,5100000
+b96b3b7f-5668-4be9-a796-ca5dff26178f,2227,United States,hyperion_8,low,2,7,daytime,winter,5100000
+2a0f2e1b-68e8-4d88-8abb-b1593b5686f7,3053,Estonia,hyperion_8.1,,11,19,nighttime,fall,5100000
+5c89959a-e3c6-4f17-b2b5-76c67a90a390,337,United States,hyperion_8.1,med,6,6,daytime,summer,5100000
+ba4c800d-2c8e-4486-8d97-5f6527395107,2304,France,hyperion_8,low,1,12,daytime,winter,5100000
+ab48b451-b2b2-4844-af5c-b1fdc7b940cc,1296,United States,hyperion_8.1,,9,19,nighttime,fall,5100000
+29506d20-9e56-4ecb-b7d0-064b565af3c7,3145,Germany,hyperion_8.1,high,4,9,daytime,spring,5100000
+e260af22-9027-44c5-b6de-ca6cc331487e,1287,United States,hyperion_8.1,,12,18,nighttime,winter,5100000
+da1d6086-f790-4bd6-ae23-338154abd867,2320,Netherlands,hyperion_8,low,8,15,daytime,summer,5100000
+bc4e5e81-4e7d-4a93-85ac-bb3eeaa71219,1316,United States,hyperion_8.1,,10,12,daytime,fall,5100000
+3a3dd30e-06b9-4032-970c-488ddad48f5f,1367,Germany,hyperion_8.1,med,1,18,nighttime,winter,5100000
+0d47443e-b099-4407-a0d3-3868a50ba8a2,2631,United States,hyperion_8.1,,5,6,daytime,spring,5100000
+b9c0d186-a4dc-4cd8-aacf-531a827be95e,372,Croatia,hyperion_8,low,7,18,nighttime,summer,5100000
+e9fe9b1b-88fa-410b-8986-580574708a19,3009,United States,hyperion_8.1,,2,6,daytime,winter,5100000
+0eb3d6b9-d0c6-4432-afff-f281004aa1ae,1407,Greece,hyperion_8.1,,9,17,daytime,fall,5100000
+aa056d47-7a0c-4900-be37-a88383cae867,328,United States,hyperion_8,low,12,19,nighttime,winter,5100000
+11e1dff2-2b33-4543-b688-bf5475a11da9,3057,Czechia,hyperion_8.1,,11,17,daytime,fall,5100000
+98fd4087-8cd1-4e01-983e-37a52bba5790,3011,United States,hyperion_8.1,med,8,3,nighttime,summer,5100000
+42cc7b11-e40b-42cf-b216-7ac0feffcf31,2322,Slovenia,hyperion_8.1,med,4,16,daytime,spring,5100000
+50b38d07-7e8d-4fee-830f-5e4169fea21c,2290,Germany,hyperion_8,low,1,15,daytime,winter,5100000
+9b2b3274-205a-482b-9bf7-38b1534c5941,330,United States,hyperion_8.1,,10,4,nighttime,fall,5100000
+ca36cfa3-c10d-46b0-adf9-4a8d7e19564e,2279,United States,hyperion_8.1,high,12,8,daytime,winter,5100000
+3e85daca-fad5-436a-bd41-6c8edb8e9ff0,1464,Lithuania,hyperion_8.1,,8,23,nighttime,summer,5100000
+4df05b7e-4441-47f4-b9e2-94279c83c289,318,United States,hyperion_8,low,3,16,daytime,spring,5100000
+d5c7d565-e3cd-4ea5-b5b0-435b5350cd87,2307,Italy,hyperion_8.1,,11,12,daytime,fall,5100000
+f6d29ae9-2bbb-4535-ab2c-e2f7f8c645c9,2992,United States,hyperion_8.1,,2,22,nighttime,winter,5100000
+481b43a7-9717-4d14-81be-002e15b04718,343,Germany,hyperion_8,low,9,7,daytime,fall,5100000
+b235cefb-13be-4c8c-ad47-acf6c96f80b1,2646,United States,hyperion_8.1,med,1,18,nighttime,winter,5100000
+5bce281f-1b4f-46c3-ae07-4b69bc00a105,372,Romania,hyperion_8.1,,7,7,daytime,summer,5100000
+5634254b-ff99-452e-99a5-989daf51518d,2243,United States,hyperion_8,low,5,10,daytime,spring,5100000
+0f16762c-47f6-46f5-a764-2547e2108661,1379,France,hyperion_8.1,,12,18,nighttime,winter,5100000
+10921455-bc44-4b05-87f6-61b0996e37c3,340,United States,hyperion_8.1,high,11,14,daytime,fall,5100000
+fbbadc60-8365-48b6-acd9-aa546f76dd95,3110,Germany,hyperion_8.1,,8,20,nighttime,summer,5100000
+405a5009-cab2-4b95-bf6a-89663537527e,325,United States,hyperion_8,low,1,8,daytime,winter,5100000
+0aa0b44e-b118-4741-8077-3c75cfe29a13,2322,Denmark,hyperion_8.1,,9,17,daytime,fall,5100000
+bdbc28cd-6ab1-481b-a96c-cceeb52feb88,338,United States,hyperion_8.1,med,5,22,nighttime,spring,5100000
+5dd9c20b-97a3-4cf5-8fb3-977946eee58f,3043,Spain,hyperion_8.1,,12,13,daytime,winter,5100000
+fd57ff77-d69e-4fbb-ad64-af655944d6a2,2246,United States,hyperion_8,low,6,19,nighttime,summer,5100000
+a05149ab-0345-4b87-894b-1759a3652522,3044,Austria,hyperion_8.1,,10,13,daytime,fall,5100000
+df3b23db-c967-43b1-afef-c126bd733327,1365,Germany,hyperion_8.1,med,2,14,daytime,winter,5100000
+a740cea8-4644-4f59-8383-e8569baa7a2d,2210,United States,hyperion_8,low,3,18,nighttime,spring,5100000
+ea089991-af90-49ed-946a-9e59f9b4ac11,2171,United States,hyperion_8.1,,8,11,daytime,summer,5100000
+3c197240-4974-4a93-9a2a-6522ac790a73,1409,Portugal,hyperion_8.1,,1,20,nighttime,winter,5100000
+40ef56e1-64c0-463d-b365-c4a8abc123b3,3014,United States,hyperion_8.1,high,11,10,daytime,fall,5100000
+aeb60277-a53f-4330-9bf8-1187a3724149,2312,Sweden,hyperion_8,low,12,10,daytime,winter,5100000
+4e73cc3b-41c4-40c8-b39b-279196a2a927,1434,Finland,hyperion_8.1,,4,21,nighttime,spring,5100000
+910fda8f-428f-4b95-b0b6-971d70aaf587,2174,United States,hyperion_8.1,,9,16,daytime,fall,5100000
+21024ac5-71a7-4d95-926d-9f8ae6e937d0,343,Germany,hyperion_8,low,7,17,daytime,summer,5100000
+bee4af68-d494-477c-a66a-b30d21457467,1324,United States,hyperion_8.1,med,2,18,nighttime,winter,5100000
+51c94431-634e-420f-bd99-505936c0afc7,2640,United States,hyperion_8.1,,11,7,daytime,fall,5100000
+ecd95a63-520e-4801-ab77-ee389e31d512,1444,Estonia,hyperion_8.1,,12,18,nighttime,winter,5100000

@@ -1,0 +1,38 @@
+{
+ "moop_u40": {
+  "sha256": "57c07839f978a5a06ea8559e96be7fcdc955853b72b91f906ae1cec9f28d902b",
+  "source": "checkpoint evaluated in the paper / rebuttal"
+ },
+ "moop_e_u40": {
+  "sha256": "e6cb1959b957fdb342d1dcc499113356815787ab3caee7a845432ffe219d843e",
+  "source": "checkpoint evaluated in the paper / rebuttal"
+ },
+ "fm_only_u40": {
+  "sha256": "21606151d5525f548f9329494d641601b5feb3a0a02287c46464d874fa307600",
+  "source": "checkpoint evaluated in the paper / rebuttal"
+ },
+ "ce_only_u40": {
+  "sha256": "9b8d79485fb343b7e8f9ff0b3583ba2a269283397e16de8f1e16272cb2fee0ce",
+  "source": "checkpoint evaluated in the paper / rebuttal"
+ },
+ "moop_u40_l0keep": {
+  "sha256": "46a9c88658456f98ff7acb3a275791cb34f4e5e04e8018ed45c5043c07d04659",
+  "source": "checkpoint evaluated in the paper / rebuttal"
+ },
+ "moop_u50": {
+  "sha256": "4fb3dd24e01c91016aa9e5116fca892918ab3ae6bba274cbfd9f929d23b34a92",
+  "source": "checkpoint evaluated in the paper / rebuttal"
+ },
+ "moop_e_u50": {
+  "sha256": "2939ba330c3ef0f6f6b5bc44ccdbdad45b1522cd0c342e22d855299a08b32ba4",
+  "source": "checkpoint evaluated in the paper / rebuttal"
+ },
+ "fm_only_u50": {
+  "sha256": "852fc755d12440961964e63910e3be7297aded76b8969678d362b4283b09ca69",
+  "source": "checkpoint evaluated in the paper / rebuttal"
+ },
+ "ce_only_u50": {
+  "sha256": "670da9ae716b301649f2fbd2288b44df9cd07954872c55da313f5af2e94f7465",
+  "source": "checkpoint evaluated in the paper / rebuttal"
+ }
+}

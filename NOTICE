@@ -1,0 +1,16 @@
+MoOP
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This repository builds on, but does not redistribute:
+- Alpamayo 1.5 (https://github.com/NVlabs/alpamayo1.5), source code under the Apache License 2.0.
+  model_io.py follows its inference path; the slim attention forward in moop/slim.py and
+  alpasim/alpamayo1_5_slim.py adapts Qwen3VLTextAttention.forward from Hugging Face transformers
+  (Apache License 2.0).
+- Alpamayo 1.5 model weights (nvidia/Alpamayo-1.5-10B), released under OpenMDW-1.1. This repository
+  ships pruning masks (indices of kept units) and importance scores, not weights.
+- AlpaSim (https://github.com/NVlabs/alpasim), Apache License 2.0. alpasim/handover_fix.patch backports
+  a fix from the AlpaSim main branch; alpasim/install.py patches a local checkout.
+- NVIDIA PhysicalAI-Autonomous-Vehicles dataset and AlpaSim NuRec scenes: only clip / scene ids and
+  timestamps are included (data/).
+- LingoQA (https://github.com/wayveai/LingoQA), Wayve non-commercial licence: neither its data nor its
+  code is included; scripts/score_lingoqa.py imports Lingo-Judge from a user-provided checkout.

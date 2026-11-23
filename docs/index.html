@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoOP: Structured Pruning of Driving VLAs</title>
+<meta name="description" content="MoOP prunes the reasoning driving VLA Alpamayo 1.5 by combining importance from the reasoning (CE) and action (flow-matching) objectives: 24% fewer parameters with 94% of the dense LingoQA score and the best closed-loop scene score at that budget, no fine-tuning.">
+<meta property="og:title" content="MoOP: Exploring What to Preserve for Reasoning and Action in Structured Pruning of Driving VLAs">
+<meta property="og:description" content="Mixture-of-Objective Pruning for reasoning VLAs: keep what either reasoning or action needs.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cvlab-kaist.github.io/MoOP/">
+<meta property="og:image" content="https://cvlab-kaist.github.io/MoOP/static/images/fig1.png">
+<meta property="og:image:width" content="1730">
+<meta property="og:image:height" content="684">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MoOP: Structured Pruning of Driving VLAs">
+<meta name="twitter:description" content="Keep what either reasoning or action needs: 24% fewer parameters in Alpamayo 1.5, no fine-tuning.">
+<meta name="twitter:image" content="https://cvlab-kaist.github.io/MoOP/static/images/fig1.png">
+<link rel="canonical" href="https://cvlab-kaist.github.io/MoOP/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5fbf'/%3E%3Ccircle cx='44' cy='44' r='12' fill='%23e3a008'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&family=Source+Serif+4:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/css/style.css">
+<script>
+  // apply a stored theme before first paint
+  try { const t = localStorage.getItem("moop-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<header class="topnav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mo">Mo</span><span class="op">OP</span></a>
+    <nav aria-label="Sections">
+      <a href="#overview">Overview</a>
+      <a href="#findings">Findings</a>
+      <a href="#method">Method</a>
+      <a href="#results">Results</a>
+      <a href="#reasoning">Reasoning</a>
+      <a href="#driving">Driving</a>
+      <a href="#code">Code</a>
+      <a href="#bibtex">BibTeX</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Light / dark">
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <h1 class="wordmark"><span class="mo">Mo</span><span class="op">OP</span></h1>
+    <p class="subtitle">Exploring What to Preserve for Reasoning and Action in Structured Pruning of Driving VLAs</p>
+    <div class="authors">
+      <span class="author lead">Seongchan Kim<sup>1</sup></span>
+      <span class="author">Soowon Son<sup>1</sup></span>
+      <span class="author">Sangoh Kim<sup>1</sup></span>
+      <span class="author">Hyunah Ko<sup>1</sup></span>
+      <span class="author">Eunbeen Hong<sup>1</sup></span>
+      <span class="author">Hyunkoo Lee<sup>1</sup></span>
+      <span class="author">Sanghyun Lee<sup>1</sup></span>
+      <span class="author">Wonjun Moon<sup>1</sup></span>
+      <span class="author">Kihong Kim<sup>2</sup></span>
+      <span class="author">Dongyeon Son<sup>2</sup></span>
+      <span class="author">Woongchan Nam<sup>2</sup></span>
+      <span class="author">Seungryong Kim<sup>1</sup></span>
+    </div>
+    <div class="affil"><span><sup>1</sup>KAIST</span><span><sup>2</sup>LG Innotek</span></div>
+    <div class="buttons">
+      <a class="btn soon" aria-disabled="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>
+        Paper <small>soon</small></a>
+      <a class="btn soon" aria-disabled="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M20 4L4 20"/></svg>
+        arXiv <small>soon</small></a>
+      <a class="btn" href="https://github.com/cvlab-kaist/MoOP" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+        Code</a>
+    </div>
+
+    <figure class="figure teaser">
+      <img src="static/images/fig1.png" alt="Three pruning strategies on a VLM + action expert: pruning by the reasoning loss alone keeps the reasoning but crashes, pruning by the action loss alone corrupts the reasoning and crashes, MoOP combines both and keeps a safe gap." width="1730" height="684">
+      <figcaption>Pruning a reasoning VLA by one objective breaks the other. With the reasoning loss alone
+        (<b style="color:var(--ce)">L<sub>CE</sub></b>), the model still reasons but its trajectory fails; with the action loss alone
+        (<b style="color:#b07a00">L<sub>FM</sub></b>), the reasoning goes wrong and so does the drive. MoOP keeps every unit that
+        either objective needs.</figcaption>
+    </figure>
+
+    <p class="tldr">MoOP prunes <b>Alpamayo 1.5</b> by keeping what <b class="ce">reasoning</b> or
+      <b class="fm">action</b> needs. It needs <b>no fine-tuning</b> after pruning.</p>
+    <div class="stats">
+      <div class="stat"><div class="num">24.0%</div><div class="lbl">of all parameters removed (VLM pruning),<br>94.0% of dense LingoQA kept</div></div>
+      <div class="stat"><div class="num">39.4%</div><div class="lbl">of all parameters removed<br>with expert MLP pruning</div></div>
+      <div class="stat"><div class="num">1.37×</div><div class="lbl">end-to-end inference<br>speedup</div></div>
+      <div class="stat"><div class="num">36.6%</div><div class="lbl">lower peak<br>GPU memory</div></div>
+    </div>
+  </div>
+
+  <section id="overview">
+    <div class="wrap">
+      <div class="kicker">Overview</div>
+      <h2>Two objectives, one network</h2>
+      <div class="abstract">
+        <p>Reasoning vision–language–action (VLA) models for autonomous driving use chain-of-thought reasoning to guide
+          action generation, but incur substantial memory and computational costs. We study structured pruning for these
+          models, focusing on preserving both scene understanding and trajectory prediction.</p>
+        <p>Our analysis of Taylor importance in Alpamayo-1.5-10B shows that reasoning and trajectory objectives assign
+          different importance to the same VLM structures. In the action expert, MLP channels exhibit more stable importance
+          rankings across denoising steps than query heads, and a small fraction of channels accounts for most of the
+          measured importance.</p>
+        <p>Based on these findings, we propose <b>MoOP</b> (Mixture-of-Objective Pruning). It does two things:</p>
+        <ul>
+          <li>For the VLM, it combines the importance ranks from both objectives.</li>
+          <li>For the action expert, it aggregates stepwise importance and keeps a fixed subset of MLP channels.</li>
+        </ul>
+        <p>At 24.0% total parameter reduction, VLM-only pruning with MoOP retains 94.0% of the dense model's LingoQA score
+          and achieves the highest closed-loop scene score among methods at the same budget.</p>
+        <p>Removing 93.75% of expert MLP channels increases the reduction to 39.4%. Open-loop errors stay nearly
+          unchanged relative to VLM-only pruning, and closed-loop performance remains competitive. The resulting model runs
+          end to end 1.37× faster with 36.6% lower peak memory, without post-pruning fine-tuning.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="findings">
+    <div class="wrap">
+      <div class="kicker">Findings</div>
+      <h2>What reasoning and action each depend on</h2>
+      <p class="lede">We measure the Taylor importance of every query head and MLP channel in Alpamayo 1.5 under two
+        objectives:</p>
+      <ul class="lede">
+        <li>Cross-entropy on the model's own Chain-of-Causation reasoning (CE).</li>
+        <li>The action expert's flow-matching loss (FM), which reaches the VLM only through the KV cache.</li>
+      </ul>
+      <div class="cards">
+        <div class="card"><div class="n">1</div><h3>The objectives disagree</h3>
+          <p>CE and FM rank the same VLM units differently. <span class="em">The disagreement grows in the late layers</span>,
+            where the CE importance concentrates on the CoC tokens.</p></div>
+        <div class="card fm"><div class="n">2</div><h3>Expert MLPs are step-stable</h3>
+          <p>The expert reuses its weights at every denoising step. Its <span class="em">MLP channels keep their importance
+            ranking across steps</span>; its query heads do not.</p></div>
+        <div class="card fm"><div class="n">3</div><h3>A few channels carry it</h3>
+          <p>Removing 90% of the expert's MLP channels removes only <span class="em">1.8% of their measured importance</span>.
+            The same 90% of query heads would remove 69%.</p></div>
+      </div>
+      <figure class="figure">
+        <img src="static/images/fig3.png" alt="Rank correlation between CE and FM importance per VLM layer, and the share of layer importance by token type for each objective." width="1730" height="530" loading="lazy">
+        <figcaption>CE and FM importance differ in the late VLM layers. (a) Per-layer rank correlation between the two
+          objectives, over all tokens and one token type at a time. (b, c) Share of each layer's importance by token type,
+          for FM and for CE.</figcaption>
+      </figure>
+      <figure class="figure" style="margin-top:18px">
+        <img src="static/images/fig5.png" alt="Step-to-step rank similarity of expert query heads and MLP channels, and the cumulative importance removed as units are pruned." width="1730" height="542" loading="lazy">
+        <figcaption>In the action expert, MLP channels keep their importance ranking across the 10 denoising steps (b), unlike
+          query heads (a). Importance is also concentrated in a few MLP channels (c).</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="method">
+    <div class="wrap">
+      <div class="kicker">Method</div>
+      <h2>Mixture-of-Objective Pruning</h2>
+      <p class="lede">Importance is measured once on 100 calibration clips. Units are then removed physically, without
+        fine-tuning.</p>
+      <figure class="figure pipeline">
+        <video src="static/videos/moop_pipeline.mp4" poster="static/videos/moop_pipeline.jpg" width="1920" height="1200"
+          controls muted loop playsinline preload="metadata"
+          aria-label="Animation of MoOP: Alpamayo 1.5 reasons then acts; importance is measured for the reasoning and the action objectives; a unit is kept if either objective needs it; the rest is removed in one shot; pruning by one objective breaks the other, while MoOP keeps a safe gap."></video>
+        <figcaption>MoOP in 14 seconds: measure each unit's importance for reasoning (CE) and for action (FM), keep a unit if
+          either objective ranks it high, and remove the rest in one shot.</figcaption>
+      </figure>
+      <div class="cards steps">
+          <div class="card"><div class="n">1</div><h3>Measure both objectives</h3>
+            <p>One teacher-forced pass over the model's own CoC gives <span class="eq">|∂L<sub>CE</sub>/∂g|</span> for every
+              query head and MLP channel. The flow-matching loss is backpropagated through the expert into the KV cache, and
+              from there through the VLM, giving <span class="eq">|∂L<sub>FM</sub>/∂g|</span>.</p></div>
+          <div class="card"><div class="n">2</div><h3>Combine ranks in the VLM</h3>
+            <p>Within each layer, a unit's score is <span class="eq">max(rank<sub>CE</sub>, rank<sub>FM</sub>)</span>: it
+              is kept if either objective ranks it high. <span class="em">Every layer drops the same share</span> of its
+              lowest-scoring units: 13 of 32 query heads and 40% of the MLP channels. That removes 24.0% of all parameters.</p></div>
+          <div class="card fm"><div class="n">3</div><h3>Aggregate steps in the expert</h3>
+            <p>Per-step FM importance is normalised within each layer and averaged over the denoising steps. The expert keeps
+              <span class="em">516 of 8,256 MLP channels</span> in every layer and all of its attention heads, for 39.4%
+              total reduction.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="results">
+    <div class="wrap">
+      <div class="kicker">Results</div>
+      <h2>Results at the same parameter budget</h2>
+      <p class="lede">All methods prune Alpamayo-1.5-10B to the same budget (24% of parameters, VLM only) without fine-tuning.
+        MoOP is the method in the shaded rows.</p>
+
+      <h3>Open loop: PhysicalAI-AV</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr class="group"><th></th><th></th><th></th><th class="sep" colspan="2">Test500</th><th class="sep" colspan="2">OOD-Val262</th></tr>
+            <tr><th>Method</th><th>Expert pruning</th><th>Params removed</th><th class="sep">minADE@6 ↓</th><th>minFDE@6 ↓</th><th class="sep">minADE@6 ↓</th><th>minFDE@6 ↓</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Dense (Alpamayo 1.5)</td><td>–</td><td>0%</td><td class="sep">0.842</td><td>2.267</td><td class="sep">1.000</td><td>2.496</td></tr>
+            <tr><td>Wanda</td><td>✗</td><td>24%</td><td class="sep">2.975</td><td>8.269</td><td class="sep">2.790</td><td>6.884</td></tr>
+            <tr><td>LLM-Pruner</td><td>✗</td><td>24%</td><td class="sep">1.451</td><td>3.889</td><td class="sep">1.662</td><td>4.153</td></tr>
+            <tr><td>Týr-the-Pruner</td><td>✗</td><td>24%</td><td class="sep best">0.950</td><td>2.570</td><td class="sep">1.176</td><td>2.990</td></tr>
+            <tr><td>FM-only</td><td>✗</td><td>24%</td><td class="sep">1.008</td><td>2.720</td><td class="sep">1.178</td><td>2.960</td></tr>
+            <tr><td>CE-only</td><td>✗</td><td>24%</td><td class="sep">1.584</td><td>4.500</td><td class="sep">1.546</td><td>4.010</td></tr>
+            <tr class="ours"><td>MoOP</td><td>✗</td><td>24%</td><td class="sep best">0.950</td><td>2.546</td><td class="sep">1.119</td><td>2.851</td></tr>
+            <tr class="ours"><td>MoOP</td><td>✓</td><td>39.4%</td><td class="sep">0.951</td><td class="best">2.539</td><td class="sep best">1.118</td><td class="best">2.844</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Metrics in metres, over 8 sampled trajectories per clip (the first 6 are used). Best pruned result in bold.</p>
+
+      <h3>Closed loop: AlpaSim</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr class="group"><th></th><th></th><th class="sep" colspan="3">Origin150</th><th class="sep" colspan="3">Hard100</th></tr>
+            <tr><th>Method</th><th>Expert pruning</th><th class="sep">Scene score ↑</th><th>Off-road ↓</th><th>At-fault coll. ↓</th><th class="sep">Scene score ↑</th><th>Off-road ↓</th><th>At-fault coll. ↓</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Dense (Alpamayo 1.5)</td><td>–</td><td class="sep">0.750</td><td>0.070</td><td>0.040</td><td class="sep">0.510</td><td>0.265</td><td>0.030</td></tr>
+            <tr><td>Wanda</td><td>✗</td><td class="sep">0.621</td><td>0.093</td><td>0.147</td><td class="sep">0.406</td><td class="best">0.140</td><td>0.060</td></tr>
+            <tr><td>LLM-Pruner</td><td>✗</td><td class="sep">0.811</td><td class="best">0.037</td><td>0.057</td><td class="sep">0.575</td><td>0.160</td><td>0.035</td></tr>
+            <tr><td>Týr-the-Pruner</td><td>✗</td><td class="sep">0.786</td><td>0.087</td><td>0.030</td><td class="sep">0.586</td><td>0.215</td><td class="best">0.020</td></tr>
+            <tr><td>FM-only</td><td>✗</td><td class="sep">0.783</td><td>0.087</td><td>0.033</td><td class="sep">0.546</td><td>0.260</td><td>0.025</td></tr>
+            <tr><td>CE-only</td><td>✗</td><td class="sep">0.660</td><td>0.090</td><td>0.073</td><td class="sep">0.416</td><td>0.200</td><td>0.040</td></tr>
+            <tr class="ours"><td>MoOP</td><td>✗</td><td class="sep best">0.828</td><td>0.067</td><td class="best">0.023</td><td class="sep">0.595</td><td>0.190</td><td>0.040</td></tr>
+            <tr class="ours"><td>MoOP</td><td>✓</td><td class="sep">0.793</td><td>0.083</td><td>0.030</td><td class="sep best">0.600</td><td>0.200</td><td class="best">0.020</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Each scene is driven twice; rates are per rollout. The scene score is 0 after an at-fault collision or
+        off-road event, otherwise progress along the route. Origin150 is the first 150 scenes of the AlpaSim public suite;
+        Hard100 is a disjoint set of 100 harder scenes.</p>
+
+      <div class="results-grid">
+        <div>
+          <h3>Driving VQA: LingoQA</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Method</th><th>LingoQA ↑</th><th>CoC NLL ↓</th></tr></thead>
+              <tbody>
+                <tr><td>Dense (Alpamayo 1.5)</td><td>73.2</td><td>0.175</td></tr>
+                <tr><td>Wanda</td><td>9.2</td><td>2.183</td></tr>
+                <tr><td>LLM-Pruner</td><td>44.8</td><td>0.462</td></tr>
+                <tr><td>Týr-the-Pruner</td><td>34.2</td><td>0.516</td></tr>
+                <tr><td>FM-only</td><td>37.0</td><td>0.586</td></tr>
+                <tr><td>CE-only</td><td>30.2</td><td>0.313</td></tr>
+                <tr class="ours"><td>MoOP</td><td class="best">68.8</td><td class="best">0.252</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">LingoQA: zero-shot accuracy judged by Lingo-Judge. CoC NLL: per-token NLL of the dense model's
+            Test500 reasoning under each pruned model.</p>
+        </div>
+        <div>
+          <h3>Latency and memory</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Model</th><th>Expert MLP removed</th><th>End-to-end (ms)</th><th>Params (B)</th><th>Peak (GiB)</th></tr></thead>
+              <tbody>
+                <tr><td>Dense</td><td>–</td><td>1341.8</td><td>11.08</td><td>22.49</td></tr>
+                <tr class="ours"><td>MoOP</td><td>0%</td><td>1032.4 <small>(1.30×)</small></td><td>8.42</td><td>17.45</td></tr>
+                <tr class="ours"><td>MoOP</td><td>75%</td><td>987.0 <small>(1.36×)</small></td><td>7.05</td><td>14.90</td></tr>
+                <tr class="ours"><td>MoOP</td><td>93.75%</td><td class="best">977.8 <small>(1.37×)</small></td><td class="best">6.71</td><td class="best">14.26</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">One inference: prefill, CoC decoding and 10 denoising steps, on one GPU.</p>
+        </div>
+      </div>
+
+      <div class="viz-root result-block" id="latency">
+        <h3>Where the time goes</h3>
+        <p class="note" style="margin-bottom:12px">End-to-end latency of one inference, split into the VLM prefill, CoC decoding
+          (16 tokens) and the expert's 10 denoising steps. VLM pruning shortens prefill and decoding; expert MLP pruning
+          shortens denoising.</p>
+        <div class="viz-legend">
+          <span><i class="sw ce"></i>VLM prefill</span>
+          <span><i class="sw both"></i>CoC decoding</span>
+          <span><i class="sw fm"></i>expert denoising</span>
+        </div>
+        <svg id="lat-chart" role="img" aria-label="Stacked latency per model"></svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="reasoning">
+    <div class="wrap">
+      <div class="kicker">Reasoning</div>
+      <h2>What the pruned models answer</h2>
+      <p class="lede">Driving questions from the LingoQA validation set, answered zero-shot at the 24.0% budget and judged by
+        Lingo-Judge. These are <b>selected examples, not a random sample</b>: on each, the dense model and MoOP answer
+        correctly while FM-only, CE-only and Týr-the-Pruner do not. Over all 500 questions, accuracy is
+        <span id="lq-acc"></span>.</p>
+      <div class="viz-root coc lq" id="lq">
+        <div class="coc-head">
+          <div><b id="lq-title">Question</b></div>
+          <div class="viz-controls">
+            <button type="button" id="lq-prev" aria-label="Previous question">← Prev</button>
+            <button type="button" id="lq-next" aria-label="Next question">Next →</button>
+          </div>
+        </div>
+        <div class="lq-top">
+          <figure class="lq-img"><img id="lq-img" alt="" width="960" height="600"><figcaption>One of the four camera frames the
+            model was given. Images and questions: <a href="https://github.com/wayveai/LingoQA">Wayve LingoQA</a>.</figcaption></figure>
+          <div>
+            <div class="lq-q" id="lq-q"></div>
+            <div class="lq-refs"><b>Reference answers:</b> <span id="lq-refs"></span></div>
+          </div>
+        </div>
+        <div id="lq-list" class="coc-list" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="driving">
+    <div class="wrap">
+      <div class="kicker">Closed-loop driving</div>
+      <h2>Same scene, different pruning</h2>
+      <p class="lede">MoOP, FM-only and CE-only pruned to the same budget, on the same AlpaSim scene: six scenes where both
+        single-objective models cause an at-fault collision and five where both leave the road, while MoOP drives through.
+        Ten scenes are at the 30.0% budget (u50) and one at 24.0% (u40). Each column is that method's worse rollout of two.
+        On top are the four cameras the model drives from (front wide and front tele, cross left and cross right),
+        re-rendered by AlpaSim's neural renderer from the recorded rollout; the driver is not re-run, so this is the drive
+        that was scored. Below them is a bird's-eye view that turns with the car. Under each column is the reasoning the
+        model was acting on at that frame.</p>
+      <div class="viz-root cam" id="cam">
+        <div class="cam-tabs" id="cam-tabs" role="group" aria-label="Scene"></div>
+        <div class="cam-head"><b id="cam-title">Scene</b> <span class="muted" id="cam-sub"></span><span class="t" id="cam-time"></span></div>
+        <video id="cam-video" controls muted loop playsinline preload="metadata"></video>
+        <div class="bev-key" aria-label="Bird's-eye view legend">
+          <span><i class="k-road"></i>lane surface</span>
+          <span><i class="k-edge"></i>road edge</span>
+          <span><i class="k-flag"></i>flagged by the scorer: the road edge the car touches (off-road) or the vehicle it hits</span>
+          <span><i class="k-ego"></i>the car (outlined red if this drive fails)</span>
+          <span><i class="k-traf"></i>other traffic</span>
+          <span><i class="k-plan"></i>6.4 s plan the model holds now</span>
+          <span><i class="k-gt"></i>human driver's path and position</span>
+          <span><i class="k-trail"></i>driven path</span>
+        </div>
+        <div class="cam-caps" id="cam-caps" aria-live="off"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="code">
+    <div class="wrap">
+      <div class="kicker">Code</div>
+      <h2>Prune Alpamayo 1.5 in three commands</h2>
+      <p class="lede">The repository ships the importance scores the paper's models were cut from, so the pruned model can be
+        rebuilt from the base weights without a GPU pass; no pruned checkpoint is needed. It also includes the code to
+        re-measure importance and the open-loop, LingoQA and AlpaSim evaluation, plus every sample list.</p>
+      <div class="bib">
+        <button class="copy" type="button" data-copy="qs-text">Copy</button>
+<pre id="qs-text">git clone https://github.com/cvlab-kaist/MoOP && cd MoOP && uv sync
+python scripts/build_slim.py --recipe moop_u40 \
+    --importance recipes/importance/importance.npz --out runs/moop_u40
+python scripts/verify_recipe.py runs/moop_u40/slim_meta.json   # MATCH = the paper's model</pre>
+      </div>
+      <div class="bib" style="margin-top:12px">
+<pre>from moop.slim import load_slim
+model = load_slim("runs/moop_u40")        # Alpamayo 1.5 at the pinned revision, 24% of parameters removed</pre>
+      </div>
+      <p class="note" style="margin-top:12px">Requires access to the gated <code>nvidia/Alpamayo-1.5-10B</code> weights.
+        See the <a href="https://github.com/cvlab-kaist/MoOP#readme">README</a> for the recipes (MoOP, MoOP + expert, 30%
+        budget) and the evaluation protocols.</p>
+    </div>
+  </section>
+
+  <section class="band" id="bibtex">
+    <div class="wrap">
+      <div class="kicker">Citation</div>
+      <h2>BibTeX</h2>
+      <div class="bib">
+        <button class="copy" id="copy-bib" type="button">Copy</button>
+<pre id="bib-text">@article{kim2026moop,
+  title   = {Exploring What to Preserve for Reasoning and Action in
+             Structured Pruning of Driving VLAs},
+  author  = {Kim, Seongchan and Son, Soowon and Kim, Sangoh and Ko, Hyunah and
+             Hong, Eunbeen and Lee, Hyunkoo and Lee, Sanghyun and Moon, Wonjun and
+             Kim, Kihong and Son, Dongyeon and Nam, Woongchan and Kim, Seungryong},
+  year    = {2026}
+}</pre>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Code, pruning recipes and sample lists: <a href="https://github.com/cvlab-kaist/MoOP">github.com/cvlab-kaist/MoOP</a>.
+    Built on <a href="https://huggingface.co/nvidia/Alpamayo-1.5-10B">NVIDIA Alpamayo 1.5</a> and
+    <a href="https://github.com/NVlabs/alpasim">AlpaSim</a>.
+    <p class="attrib">This work was made using the Wayve LingoQA dataset and benchmark, provided by Wayve Technologies Ltd
+      under licence terms available at <a href="https://github.com/wayveai/LingoQA">https://github.com/wayveai/LingoQA</a>.</p></div>
+</footer>
+<script src="static/js/main.js"></script>
+<script src="static/js/viz.js"></script>
+</body>
+</html>
