@@ -142,7 +142,7 @@ terms available at https://github.com/wayveai/LingoQA.
 @article{moop2026,
   title   = {Exploring What to Preserve for Reasoning and Action in Structured Pruning of Driving VLAs},
   author  = {Kim, Seongchan and Son, Soowon and Kim, Sangoh and Ko, Hyunah and Hong, Eunbeen and
-             Lee, Hyunkoo and Lee, Sanghyun and Moon, Wonjun and Kim, Kihong and Son, Dongyeon and
+             Lee, Hyunkoo and Lee, Sanghyun and Moon, WonJun and Kim, Kihong and Son, Dongyeon and
              Nam, Woongchan and Kim, Seungryong},
   year    = {2026}
 }
