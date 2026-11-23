@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MoOP: Structured Pruning of Driving VLAs</title>
+<title>MoOP: Pruning Autonomous Driving VLAs</title>
 <meta name="description" content="MoOP prunes the reasoning driving VLA Alpamayo 1.5 by combining importance from the reasoning (CE) and action (flow-matching) objectives: 24% fewer parameters with 94% of the dense LingoQA score and the best closed-loop scene score at that budget, no fine-tuning.">
-<meta property="og:title" content="MoOP: Exploring What to Preserve for Reasoning and Action in Structured Pruning of Driving VLAs">
+<meta property="og:title" content="Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action">
 <meta property="og:description" content="Mixture-of-Objective Pruning for reasoning VLAs: keep what either reasoning or action needs.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cvlab-kaist.github.io/MoOP/">
@@ -13,7 +13,7 @@
 <meta property="og:image:width" content="1730">
 <meta property="og:image:height" content="684">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="MoOP: Structured Pruning of Driving VLAs">
+<meta name="twitter:title" content="MoOP: Pruning Autonomous Driving VLAs">
 <meta name="twitter:description" content="Keep what either reasoning or action needs: 24% fewer parameters in Alpamayo 1.5, no fine-tuning.">
 <meta name="twitter:image" content="https://cvlab-kaist.github.io/MoOP/static/images/fig1.png">
 <link rel="canonical" href="https://cvlab-kaist.github.io/MoOP/">
@@ -51,7 +51,7 @@
 <main id="top">
   <div class="wrap hero">
     <h1 class="wordmark"><span class="mo">Mo</span><span class="op">OP</span></h1>
-    <p class="subtitle">Exploring What to Preserve for Reasoning and Action in Structured Pruning of Driving VLAs</p>
+    <p class="subtitle">Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action</p>
     <div class="authors">
       <span class="author lead">Seongchan Kim<sup>1</sup></span>
       <span class="author">Soowon Son<sup>1</sup></span>
@@ -380,8 +380,7 @@ model = load_slim("runs/moop_u40")        # Alpamayo 1.5 at the pinned revision,
       <div class="bib">
         <button class="copy" id="copy-bib" type="button">Copy</button>
 <pre id="bib-text">@article{kim2026moop,
-  title   = {Exploring What to Preserve for Reasoning and Action in
-             Structured Pruning of Driving VLAs},
+  title   = {Pruning Autonomous Driving {VLAs}: What to Preserve for Reasoning and Action},
   author  = {Kim, Seongchan and Son, Soowon and Kim, Sangoh and Ko, Hyunah and
              Hong, Eunbeen and Lee, Hyunkoo and Lee, Sanghyun and Moon, WonJun and
              Kim, Kihong and Son, Dongyeon and Nam, Woongchan and Kim, Seungryong},

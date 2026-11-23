@@ -1,4 +1,6 @@
-# MoOP: Exploring What to Preserve for Reasoning and Action in Structured Pruning of Driving VLAs
+# MoOP
+
+**Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action**
 
 Seongchan Kim¹, Soowon Son¹, Sangoh Kim¹, Hyunah Ko¹, Eunbeen Hong¹, Hyunkoo Lee¹, Sanghyun Lee¹,
 WonJun Moon¹, Kihong Kim², Dongyeon Son², Woongchan Nam², Seungryong Kim¹
@@ -140,7 +142,7 @@ terms available at https://github.com/wayveai/LingoQA.
 
 ```bibtex
 @article{moop2026,
-  title   = {Exploring What to Preserve for Reasoning and Action in Structured Pruning of Driving VLAs},
+  title   = {Pruning Autonomous Driving {VLAs}: What to Preserve for Reasoning and Action},
   author  = {Kim, Seongchan and Son, Soowon and Kim, Sangoh and Ko, Hyunah and Hong, Eunbeen and
              Lee, Hyunkoo and Lee, Sanghyun and Moon, WonJun and Kim, Kihong and Son, Dongyeon and
              Nam, Woongchan and Kim, Seungryong},
