@@ -76,7 +76,7 @@ Paper setting: 100 clips, seed 42, CoC sampled at temperature 0.6 / top-p 0.98 u
 FM loss over 10 denoising steps at t = (s + 0.5) / 10. Per-clip seeds come from the clip id, so
 sharding does not change results.
 
-Two notes on reproducing the masks exactly:
+Three notes on reproducing the masks exactly:
 - **Ties at the last VLM layer.** The FM scores of the last VLM layer are exactly zero: its outputs
   never reach the KV cache the expert reads. So which of its MLP channels an FM-based recipe cuts
   depends on `np.argsort`'s order among equal values. That order changed across numpy releases, which
@@ -85,6 +85,11 @@ Two notes on reproducing the masks exactly:
   A re-measured importance can therefore swap them, and on Test500 that alone moves minADE by up to
   ~0.8 m. `moop_u40_l0keep` removes this sensitivity at the same budget; the shipped scores
   reproduce the paper's masks either way.
+- **Re-measured scores are not bit-identical.** The forward pass is deterministic (the sampled CoC and the
+  FM loss reproduce exactly), but the backward pass runs non-deterministic GPU kernels. Two measurements on
+  the same GPU therefore differ by about 0.1% (relative), and roughly 0.1% of the MLP channels near each
+  layer's cut can swap. The original research code varies the same way between its own runs. For the
+  paper's exact masks, use `recipes/importance/`.
 
 ## Evaluate
 
