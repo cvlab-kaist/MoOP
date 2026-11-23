@@ -307,14 +307,13 @@
             <button type="button" id="lq-next" aria-label="Next question">Next →</button>
           </div>
         </div>
-        <div class="lq-top">
-          <figure class="lq-img"><img id="lq-img" alt="" width="960" height="600"><figcaption>One of the four camera frames the
-            model was given. Images and questions: <a href="https://github.com/wayveai/LingoQA">Wayve LingoQA</a>.</figcaption></figure>
-          <div>
-            <div class="lq-q" id="lq-q"></div>
-            <div class="lq-refs"><b>Reference answers:</b> <span id="lq-refs"></span></div>
-          </div>
-        </div>
+        <figure class="lq-frames">
+          <div class="lq-strip" id="lq-strip"></div>
+          <figcaption>The four camera frames the model was given, oldest to newest. Images and questions:
+            <a href="https://github.com/wayveai/LingoQA">Wayve LingoQA</a>.</figcaption>
+        </figure>
+        <div class="lq-q" id="lq-q"></div>
+        <div class="lq-refs"><b>Reference answers:</b> <span id="lq-refs"></span></div>
         <div id="lq-list" class="coc-list" aria-live="polite"></div>
       </div>
     </div>

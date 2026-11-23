@@ -85,7 +85,12 @@
     const show = () => {
       const it = data.items[i];
       document.getElementById("lq-title").textContent = `Question ${i + 1} of ${data.items.length}`;
-      const img = document.getElementById("lq-img"); img.src = it.img; img.alt = `Camera frame for: ${it.q}`;
+      const strip = document.getElementById("lq-strip");
+      strip.replaceChildren(...it.imgs.map((src, k) => {
+        const img = document.createElement("img"); img.src = src; img.width = 640; img.height = 400;
+        img.alt = `Camera frame ${k + 1} of ${it.imgs.length} for: ${it.q}`;
+        return img;
+      }));
       document.getElementById("lq-q").textContent = it.q;
       document.getElementById("lq-refs").textContent = it.refs.join("  |  ");
       list.innerHTML = "";
