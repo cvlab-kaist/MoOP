@@ -1,7 +1,7 @@
 # MoOP: Exploring What to Preserve for Reasoning and Action in Structured Pruning of Driving VLAs
 
 Seongchan Kim¹, Soowon Son¹, Sangoh Kim¹, Hyunah Ko¹, Eunbeen Hong¹, Hyunkoo Lee¹, Sanghyun Lee¹,
-Wonjun Moon¹, Kihong Kim², Dongyeon Son², Woongchan Nam², Seungryong Kim¹
+WonJun Moon¹, Kihong Kim², Dongyeon Son², Woongchan Nam², Seungryong Kim¹
 
 ¹KAIST · ²LG Innotek
 
