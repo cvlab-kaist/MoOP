@@ -5,7 +5,7 @@ WonJun Moon¹, Kihong Kim², Dongyeon Son², Woongchan Nam², Seungryong Kim¹
 
 ¹KAIST · ²LG Innotek
 
-[Project page](https://cvlab-kaist.github.io/MoOP/) · Paper (coming soon)
+[Project page](https://cvlab-kaist.github.io/MoOP/) · [Paper (arXiv)](https://arxiv.org/abs/2611.31240)
 
 MoOP (Mixture-of-Objective Pruning) is a structured pruning recipe for reasoning vision–language–action
 models, applied to NVIDIA [Alpamayo 1.5](https://huggingface.co/nvidia/Alpamayo-1.5-10B) (10B parameters). It
@@ -149,6 +149,7 @@ terms available at https://github.com/wayveai/LingoQA.
   author  = {Kim, Seongchan and Son, Soowon and Kim, Sangoh and Ko, Hyunah and Hong, Eunbeen and
              Lee, Hyunkoo and Lee, Sanghyun and Moon, WonJun and Kim, Kihong and Son, Dongyeon and
              Nam, Woongchan and Kim, Seungryong},
+  journal = {arXiv preprint arXiv:2611.31240},
   year    = {2026}
 }
 ```
