@@ -144,7 +144,7 @@ terms available at https://github.com/wayveai/LingoQA.
 ## Citation
 
 ```bibtex
-@article{moop2026,
+@article{kim2026moop,
   title   = {Pruning Autonomous Driving {VLAs}: What to Preserve for Reasoning and Action},
   author  = {Kim, Seongchan and Son, Soowon and Kim, Sangoh and Ko, Hyunah and Hong, Eunbeen and
              Lee, Hyunkoo and Lee, Sanghyun and Moon, WonJun and Kim, Kihong and Son, Dongyeon and
