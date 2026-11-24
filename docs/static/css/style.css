@@ -79,6 +79,7 @@ h3 { font-size: 20px; margin: 0 0 6px; }
 .authors { font-size: 17px; max-width: 860px; margin: 0 auto; }
 .author { white-space: nowrap; display: inline-block; margin: 0 7px; }
 .author.lead { font-weight: 700; }
+.author a { color: inherit; text-underline-offset: 3px; }
 .author sup, .affil sup { font-size: 11px; margin-left: 1px; }
 .affil { color: var(--muted); margin: 10px 0 0; display: flex; gap: 22px; justify-content: center; flex-wrap: wrap; }
 .buttons { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 26px 0 8px; }
