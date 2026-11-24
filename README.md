@@ -1,5 +1,7 @@
 # Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action
 
+[![arXiv](docs/static/images/arxiv-badge.svg)](https://arxiv.org/abs/2611.31240)
+
 Seongchan Kim¹, Soowon Son¹, Sangoh Kim¹, Hyunah Ko¹, Eunbeen Hong¹, Hyunkoo Lee¹, Sanghyun Lee¹,
 WonJun Moon¹, Kihong Kim², Dongyeon Son², Woongchan Nam², Seungryong Kim¹
 
